@@ -30,8 +30,9 @@ You're invited to join us for a **1-day Azure Migration Workshop** where you'll 
 ## ✅ Before the Workshop
 
 Please complete the **30-minute pre-work** to ensure you're ready:
-1. Complete the Azure 101 self-paced module
-2. Review the Contoso Bakery scenario brief
+1. Watch: [Azure Fundamentals in 5 minutes](https://www.youtube.com/watch?v=NKEFWyqJ5XA)
+2. Watch: [Azure Migrate Overview](https://www.youtube.com/watch?v=SAQwYb9F-_c)
+3. Review the [Contoso Bakery scenario brief](../participant/scenario-brief.md)
 
 ## 📋 What to Bring
 
