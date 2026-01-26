@@ -1,16 +1,16 @@
 # Challenge 1: Plan
 
-> **Duration**: 60 minutes | **Type**: Whiteboard Design Session | **Points**: 25
+> **Duration**: 45 minutes | **Type**: Whiteboard Design Session | **Points**: 25
 
 ## Objective
 
-Design a comprehensive assessment and migration planning strategy for Contoso Manufacturing using the Cloud Adoption Framework methodology.
+Design a comprehensive assessment and migration planning strategy for Contoso Bakery using the Cloud Adoption Framework methodology.
 
 ---
 
 ## The Business Challenge
 
-Contoso Manufacturing has engaged your team to plan their migration from on-premises infrastructure to Azure. Before any migration can begin, you need to:
+Contoso Bakery has engaged your team to plan their migration from on-premises infrastructure to Azure. Before any migration can begin, you need to:
 
 1. **Understand the current environment** — What workloads exist and how are they connected?
 2. **Assess readiness** — Which workloads are ready for Azure?
@@ -133,6 +133,53 @@ By the end of this challenge, your whiteboard should show:
    - Sign-off process
 
 📸 **Take a photo of your whiteboard** — You'll need it for your presentation!
+
+---
+
+## 📝 Fill-in-the-Blanks Template
+
+Use this template to capture your team's decisions:
+
+```markdown
+## Team: ________________
+
+### Assessment Strategy
+- Discovery tool: _______________________________
+- Dependency mapping approach: ☐ Agent-based  ☐ Agentless
+- Data collection duration: ____________________
+
+### Value vs. Complexity Matrix Placement
+
+| Workload | Value (1-5) | Complexity (1-5) | Quadrant |
+|----------|-------------|------------------|----------|
+| ArcBox-Win2K22 | ___ | ___ | ________________ |
+| ArcBox-Win2K25 | ___ | ___ | ________________ |
+| ArcBox-SQL | ___ | ___ | ________________ |
+| ArcBox-Ubuntu-01 | ___ | ___ | ________________ |
+| ArcBox-Ubuntu-02 | ___ | ___ | ________________ |
+
+### Migration Waves
+
+| Wave | Workloads | Duration | Business Justification |
+|------|-----------|----------|------------------------|
+| 1 | ________________________ | _______ | ________________________ |
+| 2 | ________________________ | _______ | ________________________ |
+| 3 | ________________________ | _______ | ________________________ |
+
+### Key Dependencies Identified
+1. ________________________________________________
+2. ________________________________________________
+3. ________________________________________________
+
+### Success Criteria
+- ☐ ____________________________________________
+- ☐ ____________________________________________
+- ☐ ____________________________________________
+
+### Rollback Triggers
+- ________________________________________________
+- ________________________________________________
+```
 
 ---
 

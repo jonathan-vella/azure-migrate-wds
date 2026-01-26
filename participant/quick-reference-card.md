@@ -6,21 +6,19 @@
 
 ## 📅 Schedule At-a-Glance
 
-| Time | Challenge | Points |
-|------|-----------|--------|
-| 08:00 | C0: Azure 101 | — |
-| 08:30 | Scenario Intro | — |
-| 09:00 | **C1: Plan** (WDS) | 25 |
-| 10:00 | ☕ Break | — |
-| 10:15 | **C2: Deploy Appliance** | 25 |
-| 11:45 | Discovery Kickoff | — |
-| 12:00 | 🍽️ Lunch | — |
-| 13:00 | **C3: Assessment** | 20 |
+| Time | Activity | Points |
+|------|----------|--------|
+| 10:00 | Welcome & Azure 101 | — |
+| 10:15 | Scenario Intro | — |
+| 10:30 | **C1: Plan** (WDS) | 25 |
+| 11:15 | **C2: Deploy Appliance** | 25 |
+| 12:30 | 🍽️ Lunch | — |
+| 13:15 | **C3: Assessment** | 20 |
 | 14:00 | **C4: Execute** (WDS) | 15 |
-| 14:45 | ☕ Break | — |
-| 15:00 | **C5: Curveball** 🎲 | 10 |
-| 15:30 | **C6: Optimize** (WDS) | — |
-| 16:15 | **C7: Presentation** | 5 |
+| 14:30 | ☕ Break | — |
+| 14:45 | **C5: Curveball** 🎲 | 10 |
+| 15:15 | **C6: Optimize** (WDS) | — |
+| 16:00 | **C7: Presentation** | 5 |
 | 16:45 | Wrap-up | — |
 
 **Total**: 100 points + bonus

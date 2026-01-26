@@ -6,7 +6,7 @@ Stuck on a challenge? Check these hints before asking for help.
 
 ---
 
-## Challenge 0: Azure 101
+## Pre-work: Azure 101
 
 <details>
 <summary>Can't find Azure Migrate?</summary>

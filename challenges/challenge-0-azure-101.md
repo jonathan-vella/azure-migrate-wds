@@ -1,16 +1,16 @@
-# Challenge 0: Azure 101
+# Pre-work: Azure 101
 
-> **Duration**: 30 minutes | **Type**: Hands-on | **Points**: — (Prerequisite)
+> **Duration**: 30 minutes | **Type**: Self-paced | **Complete Before**: Workshop Day
 
 ## Objective
 
-Ensure all participants have foundational Azure skills before starting the migration challenges. This challenge levels the playing field for mixed-experience teams.
+Ensure all participants have foundational Azure skills before starting the migration challenges. Complete this pre-work **before the workshop** to ensure your team can hit the ground running.
 
 ---
 
 ## The Scenario
 
-Your team has been given access to an Azure subscription for this workshop. Before diving into migration activities, you need to familiarize yourself with the Azure portal and key concepts.
+Your team has been given access to an Azure subscription for this workshop. Before the workshop day, you need to familiarize yourself with the Azure portal and key concepts.
 
 ---
 

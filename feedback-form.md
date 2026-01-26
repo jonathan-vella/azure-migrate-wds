@@ -32,7 +32,7 @@ Please take 5 minutes to complete this feedback form.
 
 | Challenge | Too Easy | Just Right | Too Hard | N/A |
 |-----------|----------|------------|----------|-----|
-| Challenge 0: Azure 101 | [ ] | [ ] | [ ] | [ ] |
+| Pre-work: Azure 101 | [ ] | [ ] | [ ] | [ ] |
 | Challenge 1: Plan (WDS) | [ ] | [ ] | [ ] | [ ] |
 | Challenge 2: Deploy Appliance | [ ] | [ ] | [ ] | [ ] |
 | Challenge 3: Assessment | [ ] | [ ] | [ ] | [ ] |

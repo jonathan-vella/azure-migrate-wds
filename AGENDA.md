@@ -8,17 +8,46 @@
 
 ---
 
+## Visual Timeline
+
+```mermaid
+gantt
+    title Azure Migration Workshop (10:00 - 17:00)
+    dateFormat HH:mm
+    axisFormat %H:%M
+    
+    section Morning
+    Welcome & Azure 101        :welcome, 10:00, 15m
+    Scenario Introduction      :scenario, 10:15, 15m
+    Challenge 1: Plan          :crit, c1, 10:30, 45m
+    Challenge 2: Appliance     :active, c2, 11:15, 75m
+    
+    section Break
+    Lunch (Discovery runs)     :lunch, 12:30, 45m
+    
+    section Afternoon
+    Challenge 3: Assessment    :active, c3, 13:15, 45m
+    Challenge 4: Execute       :crit, c4, 14:00, 30m
+    Coffee Break               :break, 14:30, 15m
+    Challenge 5: Curveball     :milestone, c5, 14:45, 30m
+    Challenge 6: Optimize      :c6, 15:15, 45m
+    Challenge 7: Presentations :done, c7, 16:00, 60m
+```
+
+---
+
 ## Morning Session
 
-### 10:00 - 10:15 | Welcome & Challenge 0: Azure 101 (15 min)
+### 10:00 - 10:15 | Welcome & Introductions (15 min)
 
-> **Type**: Hands-on | **Points**: — (prerequisite)
+> **Type**: Facilitated | **Points**: —
 
-- Quick Azure portal orientation
+- Welcome and team introductions
+- Workshop objectives and format
+- Quick Azure portal orientation (assumes Azure 101 pre-work completed)
 - Locating Azure Migrate
-- Team introductions
 
-**Outcome**: All teams aligned on Azure fundamentals
+**Outcome**: All teams aligned and ready to start
 
 ---
 
@@ -26,7 +55,7 @@
 
 > **Type**: Facilitated | **Points**: —
 
-- Contoso Manufacturing case study presentation
+- Contoso Bakery case study presentation
 - Team formation (self-organizing, 4 per team)
 - ArcBox environment walkthrough
 
@@ -176,7 +205,7 @@
 
 | Challenge | Duration | Type | Points |
 |-----------|----------|------|--------|
-| Challenge 0: Azure 101 | 15 min | Hands-on | — |
+| Pre-work: Azure 101 | 30 min | Self-paced | — |
 | Challenge 1: Plan | 45 min | WDS | 25 |
 | Challenge 2: Appliance | 75 min | Hands-on | 25 |
 | Challenge 3: Assessment | 45 min | Hands-on | 20 |
@@ -198,4 +227,4 @@
 
 ---
 
-**Next**: [Challenge 0: Azure 101](challenges/challenge-0-azure-101.md)
+**Complete before workshop**: [Pre-work: Azure 101](challenges/challenge-0-azure-101.md)

@@ -78,18 +78,32 @@ Design the detailed migration sequence considering:
 
 #### Migration Wave Template
 
+```mermaid
+gantt
+    title Migration Wave Plan
+    dateFormat  YYYY-MM-DD
+    
+    section Wave 1
+    Prep & Validation      :prep1, 2024-01-15, 2d
+    Migrate [Server A]     :migrate1, after prep1, 1d
+    Testing & Validation   :test1, after migrate1, 2d
+    
+    section Wave 2
+    Prep & Dependencies    :prep2, after test1, 1d
+    Migrate [Server B,C]   :migrate2, after prep2, 2d
+    Testing & Validation   :test2, after migrate2, 2d
+    
+    section Wave 3
+    Final Prep             :prep3, after test2, 1d
+    Migrate [SQL/App]      :crit, migrate3, after prep3, 2d
+    UAT & Go-Live          :test3, after migrate3, 3d
 ```
-WAVE 1: [Name] | Week X | Duration: X days
-├── Servers: [list]
-├── Dependencies: [list] 
-├── Downtime window: X hours
-├── Validation: [checklist]
-└── Go/No-Go criteria: [criteria]
 
-WAVE 2: [Name] | Week X | Duration: X days
-├── Servers: [list]
-...
-```
+| Wave | Name | Servers | Duration | Downtime | Go/No-Go Criteria |
+|------|------|---------|----------|----------|-------------------|
+| 1 | _[Fill in]_ | _[List servers]_ | _X days_ | _X hours_ | _[Criteria]_ |
+| 2 | _[Fill in]_ | _[List servers]_ | _X days_ | _X hours_ | _[Criteria]_ |
+| 3 | _[Fill in]_ | _[List servers]_ | _X days_ | _X hours_ | _[Criteria]_ |
 
 **Guiding Questions**:
 - Which workload should go first (lowest risk, good learning)?

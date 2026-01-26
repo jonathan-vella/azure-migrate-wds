@@ -66,7 +66,7 @@ If you're new to Azure, review these concepts before the workshop:
 
 ## Optional: Read the Scenario
 
-Review the [Scenario Brief](scenario-brief.md) to understand the Contoso Manufacturing case study before the workshop.
+Review the [Scenario Brief](scenario-brief.md) to understand the Contoso Bakery case study before the workshop.
 
 ---
 

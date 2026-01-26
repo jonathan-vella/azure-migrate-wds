@@ -1,6 +1,6 @@
 # Challenge 7: Presentation
 
-> **Duration**: 30 minutes | **Type**: Team Presentations | **Points**: 5
+> **Duration**: 45 minutes | **Type**: Team Presentations | **Points**: 5
 
 ## Objective
 
@@ -122,14 +122,37 @@ After your presentation, facilitators will raise **3 objections** you must addre
 
 ## Presentation Order
 
-Teams will present in the order determined by the facilitator (typically random or based on registration).
+There are **4 teams**, and each team has exactly **12 minutes** (8 min presentation + 4 min objections). Strict timekeeping ensures all teams present.
 
-| Team | Time Slot |
-|------|-----------|
-| Team 1 | 16:15 - 16:27 |
-| Team 2 | 16:27 - 16:39 |
-| Team 3 | 16:39 - 16:51 |
-| (etc.) | |
+| Team | Time Slot | Duration |
+|------|-----------|----------|
+| 🔴 Team 1 | 16:15 - 16:27 | 12 min |
+| 🟠 Team 2 | 16:27 - 16:39 | 12 min |
+| 🟢 Team 3 | 16:39 - 16:51 | 12 min |
+| 🔵 Team 4 | 16:51 - 17:03 | 12 min |
+
+```mermaid
+gantt
+    title Presentation Schedule (16:15 - 17:00)
+    dateFormat HH:mm
+    axisFormat %H:%M
+    
+    section Team 1
+    Presentation    :t1p, 16:15, 8m
+    Objections      :t1o, after t1p, 4m
+    
+    section Team 2
+    Presentation    :t2p, 16:27, 8m
+    Objections      :t2o, after t2p, 4m
+    
+    section Team 3
+    Presentation    :t3p, 16:39, 8m
+    Objections      :t3o, after t3p, 4m
+    
+    section Team 4
+    Presentation    :t4p, 16:51, 8m
+    Objections      :t4o, after t4p, 4m
+```
 
 > ⚠️ Time is strictly enforced. Practice to stay within 8 minutes!
 

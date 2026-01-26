@@ -73,7 +73,7 @@ Before starting this challenge, ensure:
 
    | Setting | Recommended Value | Notes |
    |---------|-------------------|-------|
-   | Target location | Your preferred Azure region | e.g., West Europe |
+   | Target location | **Sweden Central** | EU region for GDPR compliance |
    | Storage type | **Automatic** | Let Azure recommend |
    | Savings options | **Pay-as-you-go** | For initial estimate |
    | Sizing criteria | **Performance-based** | Uses collected metrics |

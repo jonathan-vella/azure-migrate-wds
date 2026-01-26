@@ -1,6 +1,6 @@
 # Challenge 2: Deploy Azure Migrate Appliance
 
-> **Duration**: 90 minutes | **Type**: Hands-on Lab | **Points**: 25
+> **Duration**: 75 minutes | **Type**: Hands-on Lab | **Points**: 25
 
 ## Objective
 
@@ -10,7 +10,7 @@ Deploy and configure the Azure Migrate appliance in your ArcBox environment to d
 
 ## The Business Challenge
 
-Your assessment strategy from Challenge 1 requires actual data from the environment. Contoso needs you to:
+Your assessment strategy from Challenge 1 requires actual data from the environment. Contoso Bakery needs you to:
 
 1. Set up the Azure Migrate project
 2. Deploy the discovery appliance
@@ -25,7 +25,7 @@ This is where planning meets reality — let's see what's actually running!
 
 Before starting this challenge, ensure:
 
-- [ ] You completed Challenge 0 (Azure 101)
+- [ ] You completed the Azure 101 pre-work
 - [ ] You can access the Azure portal
 - [ ] Your facilitator has confirmed ArcBox is deployed and ready
 - [ ] You have the ArcBox VM credentials (see [ArcBox Environment](../participant/arcbox-environment.md))

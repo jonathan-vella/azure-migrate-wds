@@ -20,7 +20,7 @@ As a facilitator, you are a **coach**, not a lecturer. Your job is to:
 
 | Metric | Value |
 |--------|-------|
-| Duration | 8 hours (08:00-17:00) |
+| Duration | 7 hours (10:00-17:00) |
 | Team Size | 4 people per team |
 | Scoring | 100 points + 15 bonus |
 | Format | Hands-on labs + WDS |
@@ -29,15 +29,15 @@ As a facilitator, you are a **coach**, not a lecturer. Your job is to:
 
 ## Block-by-Block Coaching Notes
 
-### 08:00-08:30 | Challenge 0: Azure 101
+### 10:00-10:15 | Welcome & Introductions
 
-**Purpose**: Level the playing field for mixed-experience audiences.
+**Purpose**: Welcome participants (assumes Azure 101 pre-work completed).
 
 **Your Actions**:
 - Welcome participants, set expectations
 - Explain the competitive scoring format
-- Walk around and verify everyone can access Azure portal
-- Answer basic navigation questions
+- Confirm everyone completed Azure 101 pre-work
+- Quick Azure portal orientation if needed
 
 **Common Issues**:
 - Login problems → Check credentials, try incognito mode
@@ -47,12 +47,12 @@ As a facilitator, you are a **coach**, not a lecturer. Your job is to:
 
 ---
 
-### 08:30-09:00 | Scenario Introduction
+### 10:15-10:30 | Scenario Introduction
 
 **Purpose**: Set the context and form teams.
 
 **Your Actions**:
-- Present the Contoso Manufacturing scenario (use scenario-brief.md)
+- Present the Contoso Bakery scenario (use scenario-brief.md)
 - Facilitate team formation (4 per team)
 - Walk through ArcBox environment overview
 - Answer questions about the scenario constraints
@@ -63,11 +63,11 @@ As a facilitator, you are a **coach**, not a lecturer. Your job is to:
 - Teams should divide work effectively
 - Hints are available — it's OK to use them
 
-**Transition**: "You have 60 minutes to design your assessment strategy. Time starts now!"
+**Transition**: "You have 45 minutes to design your assessment strategy. Time starts now!"
 
 ---
 
-### 09:00-10:00 | Challenge 1: Plan (WDS)
+### 10:30-11:15 | Challenge 1: Plan (WDS)
 
 **Purpose**: Design assessment strategy and wave plan.
 
@@ -94,16 +94,7 @@ As a facilitator, you are a **coach**, not a lecturer. Your job is to:
 
 ---
 
-### 10:00-10:15 | Break
-
-**Your Actions**:
-- Score Challenge 1 deliverables
-- Prepare for hands-on lab
-- Verify ArcBox environments are accessible
-
----
-
-### 10:15-11:45 | Challenge 2: Deploy Appliance
+### 11:15-12:30 | Challenge 2: Deploy Appliance
 
 **Purpose**: Hands-on Azure Migrate appliance deployment.
 
@@ -116,11 +107,11 @@ As a facilitator, you are a **coach**, not a lecturer. Your job is to:
 **Key Technical Checkpoints**:
 | Time | Checkpoint |
 |------|------------|
-| 10:30 | Teams connected to ArcBox-Client |
-| 10:45 | Azure Migrate project created |
-| 11:00 | Appliance imported and starting |
-| 11:15 | Appliance registered with Azure |
-| 11:30 | Credentials added, discovery starting |
+| 11:30 | Teams connected to ArcBox-Client |
+| 11:45 | Azure Migrate project created |
+| 12:00 | Appliance imported and starting |
+| 12:15 | Appliance registered with Azure |
+| 12:25 | Credentials added, discovery starting |
 
 **Common Issues**:
 - VHD download slow → Provide local copy if prepared
@@ -132,34 +123,18 @@ As a facilitator, you are a **coach**, not a lecturer. Your job is to:
 
 ---
 
-### 11:45-12:00 | Discovery Kickoff
-
-**Purpose**: Verify discovery running, preview afternoon.
-
-**Your Actions**:
-- Check each team's appliance status
-- Confirm discovery has started
-- Preview afternoon challenges
-- Answer questions
-
-**Verify Before Lunch**:
-- [ ] All teams have appliance registered
-- [ ] All teams have discovery running
-- [ ] All teams know what's next after lunch
-
----
-
-### 12:00-13:00 | Lunch
+### 12:30-13:15 | Lunch
 
 **Your Actions**:
 - Eat!
 - Monitor discovery status (spot check)
+- Score Challenge 1 and 2 deliverables
 - Prepare for assessment challenge
 - Review scoring so far
 
 ---
 
-### 13:00-14:00 | Challenge 3: Assessment
+### 13:15-14:00 | Challenge 3: Assessment
 
 **Purpose**: Create and analyze Azure assessments.
 
@@ -172,9 +147,9 @@ As a facilitator, you are a **coach**, not a lecturer. Your job is to:
 **Key Checkpoints**:
 | Time | Checkpoint |
 |------|------------|
-| 13:15 | Discovered servers visible |
-| 13:30 | VM assessment created |
-| 13:45 | Results being analyzed |
+| 13:20 | Discovered servers visible |
+| 13:35 | VM assessment created |
+| 13:50 | Results being analyzed |
 | 14:00 | Findings documented |
 
 **Coaching Questions**:
@@ -190,7 +165,7 @@ As a facilitator, you are a **coach**, not a lecturer. Your job is to:
 
 ---
 
-### 14:00-14:45 | Challenge 4: Execute (WDS)
+### 14:00-14:30 | Challenge 4: Execute (WDS)
 
 **Purpose**: Design migration execution strategy.
 
@@ -213,18 +188,18 @@ As a facilitator, you are a **coach**, not a lecturer. Your job is to:
 
 ---
 
-### 14:45-15:00 | Break
+### 14:30-14:45 | Break
 
 **Your Actions**:
 - Score Challenge 3 and 4 deliverables
 - **PREPARE THE CURVEBALL**
-- Set timer for 15:00 announcement
+- Set timer for 14:45 announcement
 
-> ⚠️ **DO NOT reveal the curveball before 15:00!**
+> ⚠️ **DO NOT reveal the curveball before 14:45!**
 
 ---
 
-### 15:00-15:30 | Challenge 5: Curveball
+### 14:45-15:15 | Challenge 5: Curveball
 
 **Purpose**: Test adaptability with surprise requirement.
 
@@ -246,7 +221,7 @@ As a facilitator, you are a **coach**, not a lecturer. Your job is to:
 
 ---
 
-### 15:30-16:15 | Challenge 6: Optimize (WDS)
+### 15:15-16:00 | Challenge 6: Optimize (WDS)
 
 **Purpose**: Cost optimization and governance design.
 
@@ -264,15 +239,24 @@ As a facilitator, you are a **coach**, not a lecturer. Your job is to:
 
 ---
 
-### 16:15-16:45 | Challenge 7: Presentations
+### 16:00-16:45 | Challenge 7: Presentations
 
 **Purpose**: Team presentations and objection handling.
 
 **Your Actions**:
 - Timekeeper (strict 8-minute limit per team)
+- Each team has 12 minutes total (8 min presentation + 4 min objections)
 - Deliver the 3 mandatory objections
 - Score presentations using rubric
 - Encourage peer appreciation
+
+**Presentation Order** (4 teams):
+| Team | Time Slot |
+|------|-----------|  
+| Team 1 | 16:00 - 16:12 |
+| Team 2 | 16:12 - 16:24 |
+| Team 3 | 16:24 - 16:36 |
+| Team 4 | 16:36 - 16:48 |
 
 **Objection Delivery**:
 
@@ -288,7 +272,7 @@ After each presentation, deliver these objections (adapt wording):
 
 ---
 
-### 16:45-17:00 | Wrap-up
+### 16:48-17:00 | Wrap-up
 
 **Your Actions**:
 1. Tally final scores
@@ -343,11 +327,12 @@ Use these when teams are stuck:
 ### Running Behind Schedule
 | Cut from | Save Time |
 |----------|-----------|
-| Challenge 0 | 15 min (assume basic skills) |
 | Scenario intro | 10 min (read-ahead) |
 | Breaks | 5 min each |
 | Challenge 6 | 15 min (combine with C4) |
 | Presentations | 2 min per team |
+
+> 💡 Pre-work: Azure 101 should be completed before the workshop, so this won't impact the day.
 
 ---
 

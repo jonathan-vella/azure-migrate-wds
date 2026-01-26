@@ -27,7 +27,7 @@ By the end of this workshop, participants will be able to:
 
 ### For Participants
 
-- [ ] Basic Azure portal familiarity (or complete Challenge 0)
+- [ ] Basic Azure portal familiarity (complete [Pre-work: Azure 101](challenges/challenge-0-azure-101.md) beforehand)
 - [ ] Laptop with modern browser (Edge or Chrome recommended)
 - [ ] Access to team's Azure subscription (provided by facilitator)
 
@@ -42,7 +42,7 @@ By the end of this workshop, participants will be able to:
 ```mermaid
 graph LR
     subgraph "Morning - CAF Plan & Prepare"
-        C0[Challenge 0<br/>Azure 101] --> C1[Challenge 1<br/>Plan & Design]
+        C0[Pre-work<br/>Azure 101] -.-> C1[Challenge 1<br/>Plan & Design]
         C1 --> C2[Challenge 2<br/>Deploy Appliance]
     end
     
@@ -74,7 +74,7 @@ azure-migrate-wds/
 1. Review [Pre-Work Checklist](participant/pre-work-checklist.md)
 2. Read [Scenario Brief](participant/scenario-brief.md)
 3. Print [Quick Reference Card](participant/quick-reference-card.md)
-4. Start with [Challenge 0](challenges/challenge-0-azure-101.md)
+4. Ensure [Pre-work: Azure 101](challenges/challenge-0-azure-101.md) is complete, then start Challenge 1
 
 ### Facilitators
 
@@ -111,4 +111,4 @@ azure-migrate-wds/
 
 ---
 
-**Ready to begin?** Head to the [Agenda](AGENDA.md) for the detailed schedule, then start with [Challenge 0](challenges/challenge-0-azure-101.md).
+**Ready to begin?** Complete the [Pre-work: Azure 101](challenges/challenge-0-azure-101.md), then head to the [Agenda](AGENDA.md) for the detailed schedule.
