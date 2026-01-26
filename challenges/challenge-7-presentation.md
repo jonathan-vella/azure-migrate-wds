@@ -4,13 +4,13 @@
 
 ## Objective
 
-Present your complete migration strategy to Contoso's leadership (facilitators and peer teams) in a chalk-talk format.
+Present your complete migration strategy to Contoso Bakery's leadership (facilitators and peer teams) in a chalk-talk format.
 
 ---
 
 ## The Business Challenge
 
-Contoso's CTO, CFO, and CISO are meeting to approve the migration project. Your team has 8 minutes to convince them that your plan is solid, addresses their concerns, and will deliver business value.
+Contoso Bakery's Managing Director and IT Manager are meeting to approve the migration project. Your team has 8 minutes to convince them that your plan is solid, addresses their concerns, and will deliver business value.
 
 After your presentation, you'll face 3 objections that you must handle convincingly.
 

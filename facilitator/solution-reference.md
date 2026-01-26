@@ -211,7 +211,7 @@ Timeline:
 **Good Answer**:
 ```
 Management Groups:
-├── Contoso Root
+├── Contoso Bakery Root
     ├── Platform
     │   ├── Identity
     │   └── Management
@@ -236,7 +236,7 @@ Key Policies:
 **Strong IaaS Answer**:
 > "We recommend SQL on Azure VM for this initial migration because:
 > 1. It's the lowest-risk approach — exact feature parity with on-prem
-> 2. Contoso's DBA team is familiar with SQL Server management
+> 2. Contoso Bakery's IT team is familiar with SQL Server management
 > 3. We identified [specific feature] that's not yet in SQL MI
 > 
 > However, we've documented SQL MI as a future optimization target once the migration is stable."

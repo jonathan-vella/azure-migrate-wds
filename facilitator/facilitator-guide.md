@@ -43,7 +43,7 @@ As a facilitator, you are a **coach**, not a lecturer. Your job is to:
 - Login problems → Check credentials, try incognito mode
 - Can't see subscription → Check subscription filter
 
-**Transition to Next Block**: "Now that everyone is comfortable with Azure, let's meet Contoso Manufacturing..."
+**Transition to Next Block**: "Now that everyone is comfortable with Azure, let's meet Contoso Bakery..."
 
 ---
 

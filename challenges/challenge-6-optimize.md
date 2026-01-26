@@ -10,7 +10,7 @@ Design a cost optimization and governance strategy for your migrated environment
 
 ## The Business Challenge
 
-Contoso's CFO wants to know:
+Contoso Bakery's Finance Manager wants to know:
 
 1. **How much will this cost?** — Monthly and annual projections
 2. **How can we save money?** — Reserved Instances, right-sizing, hybrid benefit
@@ -35,7 +35,7 @@ Before starting this challenge, ensure:
 
 ### Part A: Cost Estimation (15 min)
 
-Build a complete cost picture for Contoso:
+Build a complete cost picture for Contoso Bakery:
 
 #### Direct Migration Costs
 
@@ -77,14 +77,14 @@ Identify savings opportunities:
 
 #### Azure Hybrid Benefit
 
-If Contoso has Windows Server licenses with Software Assurance:
+If Contoso Bakery has Windows Server licenses with Software Assurance:
 
 | Benefit | Savings | Applicable To |
 |---------|---------|---------------|
 | Azure Hybrid Benefit (Windows) | Up to 40% | Windows VMs |
 | Azure Hybrid Benefit (SQL) | Up to 55% | SQL Server |
 
-**Question**: Does Contoso have eligible licenses?
+**Question**: Does Contoso Bakery have eligible licenses?
 
 #### Reserved Instances
 
@@ -271,7 +271,7 @@ Impress the judges with advanced cost optimization:
 
 - What surprised you about the cost estimates?
 - How does governance impact cost management?
-- Would you recommend Azure Arc for Contoso's hybrid strategy?
+- Would you recommend Azure Arc for Contoso Bakery's hybrid strategy?
 
 ---
 

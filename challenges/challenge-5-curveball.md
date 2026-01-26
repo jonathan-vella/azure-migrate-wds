@@ -15,7 +15,7 @@ Do not read beyond this point until your facilitator announces the curveball at 
 
 ## 📢 BREAKING NEWS FROM CONTOSO
 
-> **From**: CISO, Contoso Manufacturing  
+> **From**: IT Manager, Contoso Bakery  
 > **To**: Migration Team  
 > **Subject**: URGENT — Data Compliance Requirement  
 > **Priority**: High
@@ -36,7 +36,7 @@ Do not read beyond this point until your facilitator announces the curveball at 
 >
 > Regards,  
 > Chief Information Security Officer  
-> Contoso Manufacturing
+> Contoso Bakery
 
 ---
 

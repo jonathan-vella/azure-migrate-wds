@@ -6,7 +6,7 @@ This folder contains all materials for workshop participants.
 
 | File | Description |
 |------|-------------|
-| [scenario-brief.md](scenario-brief.md) | Contoso Manufacturing case study |
+| [scenario-brief.md](scenario-brief.md) | Contoso Bakery case study |
 | [pre-work-checklist.md](pre-work-checklist.md) | Prerequisites and setup |
 | [arcbox-environment.md](arcbox-environment.md) | ArcBox VM inventory and credentials |
 | [hints-and-tips.md](hints-and-tips.md) | Collapsible hints for each challenge |

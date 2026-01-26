@@ -1,16 +1,16 @@
-# Scenario Brief: Contoso Manufacturing
+# Scenario Brief: Contoso Bakery
 
 ## Company Overview
 
-**Contoso Manufacturing** is a mid-sized industrial equipment manufacturer headquartered in Munich, Germany, with operations across Europe.
+**Contoso Bakery** is a growing artisan bakery and wholesale supplier based in Dublin, Ireland, known for their premium sourdough breads and pastries sold to cafés and restaurants across the region.
 
 | Attribute | Details |
 |-----------|---------|
-| Industry | Industrial Manufacturing |
-| Employees | 2,500 |
-| Revenue | €180M annually |
-| Locations | Germany (HQ), France, Poland, UK |
-| IT Staff | 25 (central IT team) |
+| Industry | Food & Beverage (Wholesale) |
+| Employees | 65 |
+| Revenue | €10M annually |
+| Locations | Dublin, Ireland (single site) |
+| IT Staff | 3 (IT Manager + 2 support) |
 
 ---
 
@@ -18,17 +18,17 @@
 
 ### Current Situation
 
-Contoso operates a traditional on-premises datacenter that hosts their critical business applications. The infrastructure is aging, and the company faces several challenges:
+Contoso Bakery operates from a single facility with a small server room that hosts their business applications. The infrastructure is aging, and the company faces several challenges:
 
-- **Hardware refresh due** — Primary servers are 5+ years old
-- **Capacity constraints** — Struggling to meet growing demand
-- **Skills gap** — Hard to hire on-prem infrastructure specialists
-- **Business continuity** — Limited DR capabilities
-- **Remote work** — COVID accelerated need for cloud access
+- **Hardware refresh due** — Servers are 6+ years old and out of warranty
+- **No redundancy** — Single points of failure everywhere
+- **Skills gap** — IT team stretched thin, no dedicated infrastructure specialist
+- **Business continuity** — No proper disaster recovery plan
+- **Growth pressure** — New B2B customers require online ordering capability
 
 ### Strategic Initiative
 
-The CTO has initiated a **"Cloud First" strategy** with the goal of migrating 80% of workloads to Azure within 18 months. This workshop focuses on the first wave of that migration.
+The Managing Director has approved a **"Cloud Migration" project** with the goal of moving all workloads to Azure within 6 months. This workshop focuses on planning and executing that migration.
 
 ---
 
@@ -50,10 +50,10 @@ Your simulated on-premises datacenter (represented by ArcBox) contains:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    CONTOSO MANUFACTURING                         │
+│                       CONTOSO BAKERY                             │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                  │
-│   [Customer Portal]         [Internal Apps]        [Monitoring]  │
+│   [B2B Order Portal]        [Internal Apps]        [Monitoring]  │
 │   Ubuntu-01 (Web)    ←→    Win2K22 (App)    →    Ubuntu-02      │
 │         ↓                        ↓                              │
 │         └──────────→ [SQL Database] ←──────────┘                │
@@ -69,50 +69,50 @@ Your simulated on-premises datacenter (represented by ArcBox) contains:
 
 | Application | Depends On | Notes |
 |-------------|------------|-------|
-| Customer Portal (Ubuntu-01) | SQL Database, App Server | Customer-facing, 24/7 |
-| Internal Apps (Win2K22) | SQL Database | Business hours only |
-| Monitoring (Ubuntu-02) | All servers | Collects metrics from everything |
-| File Server (Win2K25) | Active Directory | Department file shares |
+| B2B Order Portal (Ubuntu-01) | SQL Database, App Server | Customer-facing, business hours |
+| Inventory & Ordering (Win2K22) | SQL Database | Core business app |
+| Monitoring (Ubuntu-02) | All servers | Basic uptime monitoring |
+| File Server (Win2K25) | N/A | Recipes, invoices, HR docs |
 
 ---
 
 ## Stakeholder Requirements
 
-### CTO (Chief Technology Officer)
+### Managing Director
 
-> "I want a solid migration plan that minimizes risk. We can't afford extended downtime — our production lines depend on these systems."
-
-**Priorities**:
-- Risk mitigation
-- Clear rollback strategy
-- Skills enablement for IT team
-
-### CFO (Chief Financial Officer)
-
-> "Show me the business case. I need to understand the costs — both migration and ongoing. And I want to see savings, not just different spending."
+> "We're a small team and I need this to be simple. I can't afford for the bakery systems to go down during our busy morning rush. Just make it work reliably."
 
 **Priorities**:
-- Clear cost estimates
-- ROI justification
-- Cost optimization opportunities
+- Keep it simple
+- Minimize disruption to daily operations
+- Reliable systems
 
-### CISO (Chief Information Security Officer)
+### Finance Manager
 
-> "Our customer data is sensitive. I need assurance that security and compliance requirements are met — especially GDPR."
-
-**Priorities**:
-- Data protection
-- GDPR compliance
-- Security controls in Azure
-
-### Operations Manager
-
-> "My team runs these systems 24/7. We need minimal disruption and a clear handover plan. Don't break anything!"
+> "We're a small business — every euro counts. Show me that cloud makes financial sense and won't blow our budget."
 
 **Priorities**:
-- Minimal downtime
-- Clear runbook documentation
-- Monitoring continuity
+- Clear, predictable costs
+- Stay within budget
+- Understand ongoing monthly spend
+
+### IT Manager (also acting as CISO)
+
+> "Our B2B customers trust us with their order data. We need to make sure we're handling it properly — I've heard about GDPR but we've never had a formal compliance review."
+
+**Priorities**:
+- Data protection basics
+- GDPR awareness
+- Security fundamentals in Azure
+
+### Operations Supervisor
+
+> "I manage the bakery floor and rely on the ordering system every day. If it goes down, we can't fulfil orders. Keep it running!"
+
+**Priorities**:
+- System availability
+- Simple handover
+- Quick support when issues arise
 
 ---
 
@@ -120,11 +120,11 @@ Your simulated on-premises datacenter (represented by ArcBox) contains:
 
 | Constraint | Details |
 |------------|---------|
-| **Downtime window** | Maximum 4 hours for critical systems |
-| **Timeline** | First wave must complete within 3 months |
-| **Budget** | €50,000 for migration activities (tooling, services) |
-| **Data residency** | Customer data must remain in EU (GDPR) |
-| **Skills** | IT team has basic Azure experience, need guidance |
+| **Downtime window** | Weekends only (Sat 18:00 - Sun 12:00) |
+| **Timeline** | Complete migration within 3 months |
+| **Budget** | €15,000 for migration (tooling, any consulting) |
+| **Data residency** | Customer data should stay in EU (GDPR) |
+| **Skills** | IT team has limited Azure experience |
 
 ---
 
@@ -150,7 +150,7 @@ As the migration consulting team, you will:
 3. **Plan migration waves** with proper sequencing and dependencies
 4. **Address compliance requirements** including GDPR
 5. **Optimize for cost** and design governance controls
-6. **Present your plan** to Contoso leadership
+6. **Present your plan** to Contoso Bakery leadership
 
 ---
 
@@ -160,8 +160,8 @@ As you work through the challenges, think about:
 
 - Which workload is the best pilot candidate?
 - How do you handle the SQL database migration?
-- What happens if the web server migration fails at 2 AM?
-- How will you prove GDPR compliance?
+- What happens if the web server migration fails on Sunday morning?
+- How will you address GDPR for customer order data?
 - What's your recommendation for the monitoring server?
 
 ---
@@ -173,19 +173,18 @@ As you work through the challenges, think about:
 | Component | Current State |
 |-----------|---------------|
 | Virtualization | Hyper-V |
-| Active Directory | On-premises AD DS |
-| Backup | Veeam (local) |
-| Monitoring | Nagios + Grafana |
-| Network | 1 Gbps internal, 100 Mbps internet |
+| Active Directory | None (workgroup) |
+| Backup | USB external drives (manual) |
+| Monitoring | Basic Nagios |
+| Network | 500 Mbps fibre broadband |
 
 ### Business Hours
 
-| Region | Primary Hours | Critical Period |
-|--------|---------------|-----------------|
-| Germany (HQ) | 07:00-18:00 CET | Month-end close |
-| UK | 08:00-17:00 GMT | Customer orders |
-| France | 08:00-18:00 CET | Production runs |
-| Poland | 07:00-16:00 CET | Manufacturing |
+| Day | Hours | Notes |
+|-----|-------|-------|
+| Monday - Friday | 04:00 - 18:00 | Bakery production starts early |
+| Saturday | 05:00 - 14:00 | Reduced hours |
+| Sunday | Closed | Best maintenance window |
 
 ---
 

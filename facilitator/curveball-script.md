@@ -28,7 +28,7 @@ Read this aloud (or adapt to your style):
 >
 > *[Pause for attention]*
 >
-> "I've just received an email from Contoso's Chief Information Security Officer. I'll read it to you now..."
+> "I've just received an email from Contoso's IT Manager. I'll read it to you now..."
 >
 > ---
 >
@@ -50,7 +50,7 @@ Read this aloud (or adapt to your style):
 >
 > *Regards,*  
 > *Chief Information Security Officer*  
-> *Contoso Manufacturing"*
+> *Contoso Bakery"*
 >
 > ---
 >
@@ -112,7 +112,7 @@ If you've run this workshop before and want variety:
 
 ### Option D: Security Incident
 
-> "Contoso's security team detected suspicious activity. All migrations are paused until you can demonstrate that your plan includes proper security controls."
+> "Contoso's IT Manager detected suspicious activity. All migrations are paused until you can demonstrate that your plan includes proper security controls."
 
 ---
 
