@@ -6,7 +6,7 @@ A **1-day hands-on workshop** for IT Professionals combining Azure Migrate appli
 
 | Attribute | Details |
 |-----------|---------|
-| **Duration** | 1 day (8 hours) |
+| **Duration** | 1 day (7 hours: 10:00 - 17:00) |
 | **Format** | In-person, team-based |
 | **Team Size** | 4 people per team (self-organizing) |
 | **Scoring** | 100 points + bonus opportunities |
