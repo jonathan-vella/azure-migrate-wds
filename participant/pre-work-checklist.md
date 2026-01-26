@@ -60,7 +60,7 @@ If you're new to Azure, review these concepts before the workshop:
 ### Quick Videos
 
 - [Azure Fundamentals in 5 minutes](https://www.youtube.com/watch?v=NKEFWyqJ5XA)
-- [Azure Migrate Overview](https://www.youtube.com/watch?v=vlSO5z5JKPc)
+- [Azure Migrate Overview](https://www.youtube.com/watch?v=SAQwYb9F-_c)
 
 ---
 

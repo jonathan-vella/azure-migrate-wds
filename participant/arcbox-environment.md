@@ -10,6 +10,73 @@ This document contains details about your ArcBox lab environment.
 
 Your team has access to an [Azure Jumpstart ArcBox for IT Pros](https://azurearcjumpstart.io/azure_jumpstart_arcbox/ITPro) environment. This simulates an on-premises datacenter running on Hyper-V.
 
+### Architecture Diagram
+
+```mermaid
+flowchart TB
+    subgraph Azure["☁️ Azure Cloud"]
+        direction TB
+        Portal["🌐 Azure Portal"]
+        Migrate["📊 Azure Migrate Project"]
+        Arc["🔗 Azure Arc"]
+        Portal --> Migrate
+        Portal --> Arc
+    end
+
+    subgraph OnPrem["🏢 Simulated On-Premises (ArcBox)"]
+        direction TB
+        subgraph HyperV["ArcBox-Client (Hyper-V Host)"]
+            direction LR
+            subgraph Windows["Windows VMs"]
+                Win2K22["🖥️ ArcBox-Win2K22<br/>Windows Server 2022<br/>Application Server<br/>10.10.1.100"]
+                Win2K25["🖥️ ArcBox-Win2K25<br/>Windows Server 2025<br/>File Server<br/>10.10.1.101"]
+                SQL["🗄️ ArcBox-SQL<br/>Windows + SQL 2022<br/>Database Server<br/>10.10.1.102"]
+            end
+            subgraph Linux["Linux VMs"]
+                Ubuntu01["🐧 ArcBox-Ubuntu-01<br/>Ubuntu 22.04<br/>Web Server<br/>10.10.1.103"]
+                Ubuntu02["🐧 ArcBox-Ubuntu-02<br/>Ubuntu 22.04<br/>Monitoring<br/>10.10.1.104"]
+            end
+            subgraph Appliance["Your Deployment"]
+                MigrateAppliance["🔍 Azure Migrate<br/>Appliance<br/>(You deploy this!)"]
+            end
+        end
+    end
+
+    subgraph Network["🌐 Network: 10.10.1.0/24"]
+        direction LR
+        InternalSwitch["Internal vSwitch"]
+    end
+
+    %% Connections
+    MigrateAppliance -.->|"Discovery<br/>Port 5985/5986"| Win2K22
+    MigrateAppliance -.->|"Discovery"| Win2K25
+    MigrateAppliance -.->|"Discovery<br/>+ SQL Assessment"| SQL
+    MigrateAppliance -.->|"Discovery<br/>SSH"| Ubuntu01
+    MigrateAppliance -.->|"Discovery"| Ubuntu02
+    MigrateAppliance ==>|"HTTPS 443<br/>Metadata Upload"| Migrate
+
+    %% Application Flow
+    Ubuntu01 -->|"API Calls"| Win2K22
+    Win2K22 -->|"SQL Queries"| SQL
+    Ubuntu02 -.->|"Monitoring"| Win2K22
+    Ubuntu02 -.->|"Monitoring"| SQL
+    Ubuntu02 -.->|"Monitoring"| Ubuntu01
+
+    %% Styling
+    classDef azure fill:#0078D4,stroke:#005A9E,color:#fff
+    classDef windows fill:#00A4EF,stroke:#0078D4,color:#fff
+    classDef linux fill:#E95420,stroke:#C7401F,color:#fff
+    classDef appliance fill:#50E6FF,stroke:#0078D4,color:#000
+    classDef network fill:#7FBA00,stroke:#5E8C00,color:#fff
+
+    class Portal,Migrate,Arc azure
+    class Win2K22,Win2K25,SQL windows
+    class Ubuntu01,Ubuntu02 linux
+    class MigrateAppliance appliance
+```
+
+### Text Diagram (for terminal/print)
+
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                    YOUR ARCBOX ENVIRONMENT                       │
