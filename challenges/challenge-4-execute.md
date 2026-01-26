@@ -1,6 +1,6 @@
 # Challenge 4: Execute
 
-> **Duration**: 45 minutes | **Type**: Whiteboard Design Session | **Points**: 15
+> **Duration**: 30 minutes | **Type**: Whiteboard Design Session | **Points**: 15
 
 ## Objective
 

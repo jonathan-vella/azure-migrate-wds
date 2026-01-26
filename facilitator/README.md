@@ -31,7 +31,7 @@ This folder contains materials for workshop facilitators and coaches.
 
 - Follow timing in [Facilitator Guide](facilitator-guide.md)
 - Use [Scoring Rubric](scoring-rubric.md) for evaluation
-- Announce curveball at **15:00 sharp**
+- Announce curveball at **14:45 sharp**
 - Reference [Solution Reference](solution-reference.md) for coaching
 
 ---

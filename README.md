@@ -81,7 +81,7 @@ azure-migrate-wds/
 1. Complete [Pre-Deployment Guide](facilitator/pre-deployment-guide.md) (day before)
 2. Review [Facilitator Guide](facilitator/facilitator-guide.md)
 3. Prepare [Scoring Rubric](facilitator/scoring-rubric.md)
-4. Keep [Curveball Script](facilitator/curveball-script.md) secret until 15:00!
+4. Keep [Curveball Script](facilitator/curveball-script.md) secret until 14:45!
 
 ## 🏅 Scoring Overview
 

@@ -126,31 +126,31 @@ There are **4 teams**, and each team has exactly **12 minutes** (8 min presentat
 
 | Team | Time Slot | Duration |
 |------|-----------|----------|
-| 🔴 Team 1 | 16:15 - 16:27 | 12 min |
-| 🟠 Team 2 | 16:27 - 16:39 | 12 min |
-| 🟢 Team 3 | 16:39 - 16:51 | 12 min |
-| 🔵 Team 4 | 16:51 - 17:03 | 12 min |
+| 🔴 Team 1 | 16:00 - 16:12 | 12 min |
+| 🟠 Team 2 | 16:12 - 16:24 | 12 min |
+| 🟢 Team 3 | 16:24 - 16:36 | 12 min |
+| 🔵 Team 4 | 16:36 - 16:48 | 12 min |
 
 ```mermaid
 gantt
-    title Presentation Schedule (16:15 - 17:00)
+    title Presentation Schedule (16:00 - 16:48)
     dateFormat HH:mm
     axisFormat %H:%M
     
     section Team 1
-    Presentation    :t1p, 16:15, 8m
+    Presentation    :t1p, 16:00, 8m
     Objections      :t1o, after t1p, 4m
     
     section Team 2
-    Presentation    :t2p, 16:27, 8m
+    Presentation    :t2p, 16:12, 8m
     Objections      :t2o, after t2p, 4m
     
     section Team 3
-    Presentation    :t3p, 16:39, 8m
+    Presentation    :t3p, 16:24, 8m
     Objections      :t3o, after t3p, 4m
     
     section Team 4
-    Presentation    :t4p, 16:51, 8m
+    Presentation    :t4p, 16:36, 8m
     Objections      :t4o, after t4p, 4m
 ```
 

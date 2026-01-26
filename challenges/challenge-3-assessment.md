@@ -1,6 +1,6 @@
 # Challenge 3: Assessment
 
-> **Duration**: 60 minutes | **Type**: Hands-on Lab | **Points**: 20
+> **Duration**: 45 minutes | **Type**: Hands-on Lab | **Points**: 20
 
 ## Objective
 

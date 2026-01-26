@@ -6,7 +6,7 @@
 
 ## Timing
 
-**Announce at exactly 15:00** — After the second afternoon break.
+**Announce at exactly 14:45** — After the lunch break and Challenge 4.
 
 ---
 
