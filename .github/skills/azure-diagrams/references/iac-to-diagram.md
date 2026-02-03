@@ -5,6 +5,7 @@ Generate architecture diagrams directly from your Bicep, Terraform, ARM template
 ## ⚠️ Critical Guidelines
 
 ### 1. Always Use Full Resource Names
+
 The whole point of generating from IaC is accuracy. Use the **actual resource names** from the code:
 
 ```python
@@ -21,7 +22,8 @@ kv = KeyVaults("KV")
 
 ### 2. Use `labelloc='t'` for Labels Inside Clusters
 
-The `diagrams` library places labels below icons by default, causing them to overflow cluster boundaries. **Fix: put labels ABOVE icons:**
+The `diagrams` library places labels below icons by default, causing them to overflow cluster
+boundaries. **Fix: put labels ABOVE icons:**
 
 ```python
 node_attr = {
@@ -36,6 +38,7 @@ with Diagram("My Architecture", node_attr=node_attr, ...):
 ```
 
 **Additional settings for professional output:**
+
 ```python
 graph_attr = {
     "dpi": "200",              # High resolution
@@ -46,15 +49,16 @@ cluster_style = {"margin": "30"}  # Extra padding inside clusters
 ```
 
 ### 3. ALWAYS Review the Output (Mandatory!)
+
 After generating, **you MUST view the image** and check for:
 
-| Issue | What to Look For | Fix |
-|-------|------------------|-----|
-| Text clipping | Labels cut off at edges | Increase `size` and `nodesep` |
-| Overlapping | Nodes/edges crossing | Increase spacing, change `splines` |
-| Missing arrows | Connections didn't render | Simplify clusters, check syntax |
-| Illegible text | Font too small | Increase `fontsize`, reduce nodes |
-| Cramped layout | Not enough whitespace | Increase all spacing params |
+| Issue          | What to Look For          | Fix                                |
+| -------------- | ------------------------- | ---------------------------------- |
+| Text clipping  | Labels cut off at edges   | Increase `size` and `nodesep`      |
+| Overlapping    | Nodes/edges crossing      | Increase spacing, change `splines` |
+| Missing arrows | Connections didn't render | Simplify clusters, check syntax    |
+| Illegible text | Font too small            | Increase `fontsize`, reduce nodes  |
+| Cramped layout | Not enough whitespace     | Increase all spacing params        |
 
 **If ANY issues exist, regenerate with fixes. Never deliver without confirming all resource names are fully readable.**
 
@@ -78,21 +82,28 @@ This creates diagrams that are the **source of truth** - directly derived from y
 ### From Bicep Files
 
 **Basic diagram generation:**
+
 ```
-Read the Bicep files in /infra and generate an architecture diagram showing all Azure resources and their relationships
+Read the Bicep files in /infra and generate an architecture diagram showing all Azure resources
+and their relationships
 ```
 
 **With module resolution:**
+
 ```
-Analyze main.bicep and its module references, then create a diagram of the complete infrastructure. Follow the module references in the modules/ folder.
+Analyze main.bicep and its module references, then create a diagram of the complete
+infrastructure. Follow the module references in the modules/ folder.
 ```
 
 **Network-focused:**
+
 ```
-Generate a network topology diagram from the Bicep files, focusing on VNets, subnets, and private endpoints. Show which resources are in which subnet.
+Generate a network topology diagram from the Bicep files, focusing on VNets, subnets,
+and private endpoints. Show which resources are in which subnet.
 ```
 
 **With resource details:**
+
 ```
 Read the Bicep in /infra and create a diagram that includes:
 - Resource names as defined in the Bicep
@@ -102,8 +113,10 @@ Read the Bicep in /infra and create a diagram that includes:
 ```
 
 **Grouped by function:**
+
 ```
-Parse the Bicep files and generate a diagram grouped by logical function (networking, compute, data, security) rather than by resource group
+Parse the Bicep files and generate a diagram grouped by logical function
+(networking, compute, data, security) rather than by resource group
 ```
 
 ### From Terraform
@@ -133,16 +146,20 @@ Read all ARM templates in /arm-templates and create a consolidated infrastructur
 ### From Azure Pipelines
 
 **Basic pipeline diagram:**
+
 ```
 Read our azure-pipelines.yml and create a CI/CD pipeline diagram showing the stages and deployments
 ```
 
 **With environments:**
+
 ```
-Analyze the pipeline YAML files and generate a deployment flow diagram showing which resources are deployed to which environments (dev, test, prod)
+Analyze the pipeline YAML files and generate a deployment flow diagram showing which
+resources are deployed to which environments (dev, test, prod)
 ```
 
 **Including artifacts:**
+
 ```
 Create a pipeline diagram from azure-pipelines.yml that shows:
 - Build stage with artifact creation
@@ -153,6 +170,7 @@ Create a pipeline diagram from azure-pipelines.yml that shows:
 ```
 
 **Combined infrastructure + pipeline:**
+
 ```
 Read our Bicep infrastructure code AND the azure-pipelines.yml to create:
 1. An architecture diagram of the deployed resources
@@ -162,6 +180,7 @@ Read our Bicep infrastructure code AND the azure-pipelines.yml to create:
 ### Combined Analysis
 
 **Full repo analysis:**
+
 ```
 Read our Bicep infrastructure code AND the azure-pipelines.yml to create:
 1. An architecture diagram of the deployed resources
@@ -169,11 +188,15 @@ Read our Bicep infrastructure code AND the azure-pipelines.yml to create:
 ```
 
 **Multi-environment comparison:**
+
 ```
-We have Bicep parameter files for dev, test, and prod. Create three architecture diagrams showing the differences between environments (e.g., different SKUs, node counts, redundancy settings)
+We have Bicep parameter files for dev, test, and prod. Create three architecture diagrams
+showing the differences between environments (e.g., different SKUs, node counts,
+redundancy settings)
 ```
 
 **Security-focused from IaC:**
+
 ```
 Analyze our Bicep/Terraform and create a security architecture diagram highlighting:
 - Identity and access (Entra ID, Managed Identities)
@@ -183,6 +206,7 @@ Analyze our Bicep/Terraform and create a security architecture diagram highlight
 ```
 
 **Cost visualization:**
+
 ```
 Read the Bicep files and create a diagram that visually indicates cost tiers:
 - Group expensive resources (Premium SKUs) with a highlighted border
@@ -196,23 +220,23 @@ Read the Bicep files and create a diagram that visually indicates cost tiers:
 
 ### Resource Mapping
 
-| Bicep Resource Type | Diagram Component |
-|--------------------|-------------------|
-| `Microsoft.Web/sites` | `AppServices` or `FunctionApps` |
-| `Microsoft.ContainerService/managedClusters` | `AKS` |
-| `Microsoft.ContainerRegistry/registries` | `ACR` |
-| `Microsoft.Sql/servers` | `SQLServers` / `SQLDatabases` |
-| `Microsoft.DocumentDB/databaseAccounts` | `CosmosDb` |
-| `Microsoft.Cache/redis` | `CacheForRedis` |
-| `Microsoft.ServiceBus/namespaces` | `ServiceBus` |
-| `Microsoft.Storage/storageAccounts` | `BlobStorage` / `StorageAccounts` |
-| `Microsoft.Network/virtualNetworks` | `VirtualNetworks` |
-| `Microsoft.Network/applicationGateways` | `ApplicationGateway` |
-| `Microsoft.Cdn/profiles` | `FrontDoors` / `CDNProfiles` |
-| `Microsoft.KeyVault/vaults` | `KeyVaults` |
-| `Microsoft.Insights/components` | `ApplicationInsights` |
-| `Microsoft.Logic/workflows` | `LogicApps` |
-| `Microsoft.EventGrid/topics` | `EventGridTopics` |
+| Bicep Resource Type                          | Diagram Component                 |
+| -------------------------------------------- | --------------------------------- |
+| `Microsoft.Web/sites`                        | `AppServices` or `FunctionApps`   |
+| `Microsoft.ContainerService/managedClusters` | `AKS`                             |
+| `Microsoft.ContainerRegistry/registries`     | `ACR`                             |
+| `Microsoft.Sql/servers`                      | `SQLServers` / `SQLDatabases`     |
+| `Microsoft.DocumentDB/databaseAccounts`      | `CosmosDb`                        |
+| `Microsoft.Cache/redis`                      | `CacheForRedis`                   |
+| `Microsoft.ServiceBus/namespaces`            | `ServiceBus`                      |
+| `Microsoft.Storage/storageAccounts`          | `BlobStorage` / `StorageAccounts` |
+| `Microsoft.Network/virtualNetworks`          | `VirtualNetworks`                 |
+| `Microsoft.Network/applicationGateways`      | `ApplicationGateway`              |
+| `Microsoft.Cdn/profiles`                     | `FrontDoors` / `CDNProfiles`      |
+| `Microsoft.KeyVault/vaults`                  | `KeyVaults`                       |
+| `Microsoft.Insights/components`              | `ApplicationInsights`             |
+| `Microsoft.Logic/workflows`                  | `LogicApps`                       |
+| `Microsoft.EventGrid/topics`                 | `EventGridTopics`                 |
 
 ### Module References
 
@@ -254,20 +278,20 @@ storageAccountName: storage.outputs.name
 
 ### Resource Mapping
 
-| Terraform Resource Type | Diagram Component |
-|------------------------|-------------------|
-| `azurerm_kubernetes_cluster` | `AKS` |
-| `azurerm_container_registry` | `ACR` |
-| `azurerm_app_service` | `AppServices` |
-| `azurerm_function_app` | `FunctionApps` |
-| `azurerm_mssql_server` | `SQLServers` |
-| `azurerm_cosmosdb_account` | `CosmosDb` |
-| `azurerm_redis_cache` | `CacheForRedis` |
-| `azurerm_servicebus_namespace` | `ServiceBus` |
-| `azurerm_storage_account` | `StorageAccounts` |
-| `azurerm_virtual_network` | `VirtualNetworks` |
-| `azurerm_application_gateway` | `ApplicationGateway` |
-| `azurerm_key_vault` | `KeyVaults` |
+| Terraform Resource Type        | Diagram Component    |
+| ------------------------------ | -------------------- |
+| `azurerm_kubernetes_cluster`   | `AKS`                |
+| `azurerm_container_registry`   | `ACR`                |
+| `azurerm_app_service`          | `AppServices`        |
+| `azurerm_function_app`         | `FunctionApps`       |
+| `azurerm_mssql_server`         | `SQLServers`         |
+| `azurerm_cosmosdb_account`     | `CosmosDb`           |
+| `azurerm_redis_cache`          | `CacheForRedis`      |
+| `azurerm_servicebus_namespace` | `ServiceBus`         |
+| `azurerm_storage_account`      | `StorageAccounts`    |
+| `azurerm_virtual_network`      | `VirtualNetworks`    |
+| `azurerm_application_gateway`  | `ApplicationGateway` |
+| `azurerm_key_vault`            | `KeyVaults`          |
 
 ### Following References
 
@@ -300,19 +324,19 @@ stages:
         steps:
           - task: Docker@2
             inputs:
-              containerRegistry: 'acr-connection'
-              
+              containerRegistry: "acr-connection"
+
   - stage: DeployDev
     dependsOn: Build
     jobs:
       - deployment: DeployToDev
-        environment: 'dev'
-        
+        environment: "dev"
+
   - stage: DeployProd
     dependsOn: DeployDev
     jobs:
       - deployment: DeployToProd
-        environment: 'prod'
+        environment: "prod"
 ```
 
 This generates a pipeline flow diagram showing: Build → DeployDev → DeployProd
@@ -325,11 +349,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: azure/docker-login@v1
-      
+
   deploy-dev:
     needs: build
     environment: development
-    
+
   deploy-prod:
     needs: deploy-dev
     environment: production
@@ -353,6 +377,7 @@ I have a Bicep-based infrastructure in /infra. Please:
 ### Step 2: AI Reads Files
 
 The AI reads:
+
 - `/infra/main.bicep`
 - `/infra/modules/aks.bicep`
 - `/infra/modules/sql.bicep`
@@ -395,7 +420,7 @@ A diagram that accurately reflects the actual infrastructure defined in code.
 ```
 "Group resources by:
 - Resource group
-- Subnet/network segment  
+- Subnet/network segment
 - Logical tier (web/api/data)
 - Environment (dev/prod)"
 ```
@@ -415,7 +440,7 @@ A diagram that accurately reflects the actual infrastructure defined in code.
 ```
 "We have /infra/dev and /infra/prod Bicep folders. Create:
 1. A dev environment diagram
-2. A prod environment diagram  
+2. A prod environment diagram
 3. A comparison showing what's different"
 ```
 
@@ -426,6 +451,7 @@ A diagram that accurately reflects the actual infrastructure defined in code.
 Choose settings based on the number of resources:
 
 ### Small (< 10 resources)
+
 ```python
 graph_attr = {
     "nodesep": "0.6",
@@ -435,6 +461,7 @@ graph_attr = {
 ```
 
 ### Medium (10-25 resources)
+
 ```python
 graph_attr = {
     "nodesep": "0.8",
@@ -445,6 +472,7 @@ graph_attr = {
 ```
 
 ### Large (25+ resources)
+
 ```python
 graph_attr = {
     "nodesep": "1.0",
@@ -456,7 +484,9 @@ graph_attr = {
 ```
 
 ### Very Large (50+ resources)
+
 Consider splitting into multiple diagrams:
+
 - Network topology diagram
 - Application architecture diagram
 - Data flow diagram
@@ -466,7 +496,8 @@ Consider splitting into multiple diagrams:
 
 ## Limitations
 
-1. **Implicit connections**: Some relationships aren't explicit in IaC (e.g., app code connecting to database). The AI infers these from common patterns.
+1. **Implicit connections**: Some relationships aren't explicit in IaC (e.g., app code
+   connecting to database). The AI infers these from common patterns.
 
 2. **Dynamic resources**: Resources created via loops or conditions may need clarification.
 
@@ -479,21 +510,29 @@ Consider splitting into multiple diagrams:
 ## Sample Prompt Templates
 
 ### Basic Infrastructure Diagram
+
 ```
-Read the [Bicep/Terraform] files in [path] and generate an architecture diagram with official Azure icons. Group resources by [VNet/resource group/tier].
+Read the [Bicep/Terraform] files in [path] and generate an architecture diagram
+with official Azure icons. Group resources by [VNet/resource group/tier].
 ```
 
 ### Detailed Network Diagram
+
 ```
-Analyze the networking resources in our IaC code and create a network topology diagram showing VNets, subnets, peerings, private endpoints, and NSG relationships.
+Analyze the networking resources in our IaC code and create a network topology diagram
+showing VNets, subnets, peerings, private endpoints, and NSG relationships.
 ```
 
 ### Security-Focused Diagram
+
 ```
-Generate a diagram from our Bicep that highlights the security architecture: identity (Entra ID, managed identities), network security (NSGs, firewalls, private endpoints), and secrets management (Key Vault).
+Generate a diagram from our Bicep that highlights the security architecture: identity
+(Entra ID, managed identities), network security (NSGs, firewalls, private endpoints),
+and secrets management (Key Vault).
 ```
 
 ### Pipeline + Infrastructure
+
 ```
 Read both the azure-pipelines.yml and the Bicep infrastructure code. Create two diagrams:
 1. The deployed Azure architecture
