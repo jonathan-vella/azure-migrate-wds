@@ -1,6 +1,6 @@
 # Curveball Script
 
-> ⚠️ **CONFIDENTIAL** — Do not share with participants until 15:00!
+> ⚠️ **CONFIDENTIAL** — Do not share with participants until 14:45!
 
 ---
 

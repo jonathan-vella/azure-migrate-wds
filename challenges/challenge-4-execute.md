@@ -259,4 +259,4 @@ By the end of this challenge, your whiteboard should show:
 
 ⏸️ **WAIT!** Take a break (14:45-15:00).
 
-At 15:00, your facilitator will announce **Challenge 5: Curveball** — a surprise requirement that will test your adaptability!
+At 14:45, your facilitator will announce **Challenge 5: Curveball** — a surprise requirement that will test your adaptability!

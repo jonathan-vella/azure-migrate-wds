@@ -85,7 +85,7 @@ Collaborative design exercises using flip charts or whiteboards. Teams discuss, 
 
 A surprise requirement announced mid-workshop that forces teams to adapt their plans. Simulates real-world project changes.
 
-- Challenge 5: GDPR Compliance (announced at 15:00)
+- Challenge 5: GDPR Compliance (announced at 14:45)
 
 ### 🟣 Presentation
 

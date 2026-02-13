@@ -204,7 +204,7 @@ As a facilitator, you are a **coach**, not a lecturer. Your job is to:
 **Purpose**: Test adaptability with surprise requirement.
 
 **Your Actions**:
-1. At exactly 15:00, make the announcement (see [Curveball Script](curveball-script.md))
+1. At exactly 14:45, make the announcement (see [Curveball Script](curveball-script.md))
 2. Let teams absorb the news (1-2 minutes of chaos is normal!)
 3. Guide teams to systematically address the requirement
 4. Ensure all teams understand what's required

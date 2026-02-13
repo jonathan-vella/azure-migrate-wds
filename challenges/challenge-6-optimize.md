@@ -1,6 +1,6 @@
 # Challenge 6: Optimize
 
-> **Duration**: 45 minutes | **Type**: Whiteboard Design Session | **Points**: Included in overall scoring
+> **Duration**: 45 minutes | **Type**: Whiteboard Design Session | **Points**: —
 
 ## Objective
 

@@ -4,7 +4,7 @@
 
 ## ⚠️ STOP — Wait for Facilitator Announcement!
 
-Do not read beyond this point until your facilitator announces the curveball at **15:00**.
+Do not read beyond this point until your facilitator announces the curveball at **14:45**.
 
 ---
 

@@ -145,7 +145,7 @@ gantt
 
 ### 15:15 - 16:00 | Challenge 6: Optimize (45 min)
 
-> **Type**: Whiteboard Design Session | **Points**: (included in C4)
+> **Type**: Whiteboard Design Session | **Points**: —
 
 - Cost estimation and optimization
 - Reserved Instance strategy
@@ -213,7 +213,7 @@ gantt
 | Challenge 5: Curveball | 30 min | WDS | 10 |
 | Challenge 6: Optimize | 45 min | WDS | — |
 | Challenge 7: Presentation | 45 min | Present | 5 |
-| **Total** | **~6 hours** | | **100** |
+| **Total** | **7 hours** | | **100** |
 | Bonus Opportunities | — | — | +15 |
 
 ---
