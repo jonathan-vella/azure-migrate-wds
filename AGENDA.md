@@ -184,23 +184,6 @@ gantt
 
 ---
 
-## Visual Timeline
-
-```
-10:00 ─────────────────────────────────────────────────────────── 17:00
-│                                                                    │
-├─ C0 ─┼─ Intro ─┼── C1: Plan ──┼────── C2: Appliance ──────┼─ Lunch ─┤
-│ 15m  │  15m   │     45m       │         75m               │   45m   │
-│                                                                      │
-├───── C3: Assess ─────┼── C4: Execute ──┼─ Break ─┼─ C5: Curveball ──┤
-│        45m           │      30m        │  15m    │       30m        │
-│                                                                      │
-├──── C6: Optimize ────┼───── C7: Present ─────┼─────── Wrap-up ──────┤
-│        45m           │        45m            │         15m          │
-```
-
----
-
 ## Points Summary
 
 | Challenge | Duration | Type | Points |
