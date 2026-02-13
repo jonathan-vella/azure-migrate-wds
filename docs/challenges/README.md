@@ -2,27 +2,28 @@
 
 This folder contains all challenge instructions for the Azure Migration Workshop.
 
-## Challenge Flow
+## Challenge Timeline
 
 ```mermaid
-graph TD
-    C0["⚡ Azure 101 (Pre-work)"] --> C1["📋 Challenge 1: Plan\n45 min | 25 pts"]
-    C1 --> C2["🔧 Challenge 2: Appliance\n75 min | 25 pts"]
-    C2 --> LUNCH["🍽️ Lunch\nDiscovery runs"]
-    LUNCH --> C3["📊 Challenge 3: Assessment\n45 min | 20 pts"]
-    C3 --> C4["🚀 Challenge 4: Execute\n30 min | 15 pts"]
-    C4 --> C5["🎲 Challenge 5: Curveball\n30 min | 10 pts"]
-    C5 --> C6["💰 Challenge 6: Optimize\n45 min"]
-    C6 --> C7["🎤 Challenge 7: Presentation\n45 min | 5 pts"]
-    
-    style C0 fill:#e1f5fe
-    style C2 fill:#e8f5e9
-    style C3 fill:#e8f5e9
-    style C1 fill:#fff3e0
-    style C4 fill:#fff3e0
-    style C5 fill:#ffebee
-    style C6 fill:#fff3e0
-    style C7 fill:#f3e5f5
+gantt
+    title Challenge Timeline
+    dateFormat HH:mm
+    axisFormat %H:%M
+
+    section Pre-work
+    ⚡ Azure 101 (Pre-work)              :c0, 09:30, 30m
+
+    section Morning
+    📋 Challenge 1 - Plan               :crit, c1, 10:30, 45m
+    🔧 Challenge 2 - Appliance          :active, c2, 11:15, 75m
+    🍽️ Lunch (Discovery runs)          :lunch, 12:30, 45m
+
+    section Afternoon
+    📊 Challenge 3 - Assessment         :active, c3, 13:15, 45m
+    🚀 Challenge 4 - Execute            :crit, c4, 14:00, 30m
+    🎲 Challenge 5 - Curveball          :milestone, c5, 14:45, 0m
+    💰 Challenge 6 - Optimize           :c6, 15:15, 45m
+    🎤 Challenge 7 - Presentation       :done, c7, 16:00, 45m
 ```
 
 **Legend**: 🔵 Pre-work | 🟢 Hands-on Lab | 🟠 Whiteboard Design | 🔴 Curveball | 🟣 Presentation
