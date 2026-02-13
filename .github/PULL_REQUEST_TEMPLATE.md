@@ -25,9 +25,10 @@ Fixes #
 <!-- Mark all repository areas touched by this PR -->
 
 - [ ] `README.md` or `AGENDA.md`
-- [ ] `challenges/`
-- [ ] `participant/`
-- [ ] `facilitator/`
+- [ ] `docs/challenges/`
+- [ ] `docs/audiences/participant/`
+- [ ] `docs/audiences/facilitator/`
+- [ ] `docs/operations/scripts/README.md`
 - [ ] `scripts/`
 - [ ] `.github/instructions/`
 - [ ] `.github/skills/`
@@ -74,8 +75,8 @@ Fixes #
 
 - [ ] Challenge durations still align with the agenda
 - [ ] Points totals still align with scoring rubric and scripts
-- [ ] Curveball timing is consistent across participant/facilitator docs
-- [ ] Facilitator-only content is not exposed in participant docs
+- [ ] Curveball timing is consistent across participant/facilitator docs in `docs/audiences/`
+- [ ] Facilitator-only content is not exposed in participant docs under `docs/audiences/`
 
 ## Pre-Submission Checklist
 
@@ -85,7 +86,7 @@ Fixes #
 
 - [ ] Objective/timebox/deliverables are clear in challenge-style docs
 - [ ] Terminology remains aligned with CAF Migrate and Azure Migrate
-- [ ] Audience separation preserved (`participant/` vs `facilitator/`)
+- [ ] Audience separation preserved (`docs/audiences/participant/` vs `docs/audiences/facilitator/`)
 
 ### Script Standards (if applicable)
 

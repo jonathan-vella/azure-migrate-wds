@@ -4,9 +4,9 @@
 
 - `README.md`: workshop overview
 - `AGENDA.md`: detailed schedule
-- `challenges/`: challenge flow and tasks
-- `participant/`: participant-facing materials
-- `facilitator/`: facilitator-only materials
+- `docs/challenges/`: challenge flow and tasks
+- `docs/audiences/participant/`: participant-facing materials
+- `docs/audiences/facilitator/`: facilitator-only materials
 - `scripts/`: scoring and cleanup automation
 
 ## Ownership Pattern

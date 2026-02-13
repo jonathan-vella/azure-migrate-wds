@@ -11,7 +11,7 @@ Use these rules when this repository introduces `.agent.md` files.
 
 - Define agents for workshop operations only.
 - Include explicit boundaries for participant-facing vs facilitator-only outputs.
-- Require references to existing folders (`challenges/`, `participant/`, `facilitator/`, `scripts/`).
+- Require references to existing folders (`docs/challenges/`, `docs/audiences/participant/`, `docs/audiences/facilitator/`, `scripts/`).
 
 ## Minimal Schema
 

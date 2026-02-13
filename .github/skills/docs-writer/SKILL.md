@@ -8,9 +8,9 @@ description: Maintains workshop documentation accuracy, consistency, and freshne
 ## Scope
 
 - Root docs: `README.md`, `AGENDA.md`, `feedback-form.md`
-- Challenges: `challenges/`
-- Facilitator materials: `facilitator/`
-- Participant materials: `participant/`
+- Challenges: `docs/challenges/`
+- Facilitator materials: `docs/audiences/facilitator/`
+- Participant materials: `docs/audiences/participant/`
 - Script docs: `scripts/README.md`
 
 ## Core Checks

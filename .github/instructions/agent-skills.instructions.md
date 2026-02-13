@@ -24,5 +24,5 @@ Skills in this repository must support workshop outcomes, not generic infra deli
 
 ## Quality Gate
 
-A skill is valid only if examples reference real paths in this repository and preserve facilitator/participant
-separation.
+A skill is valid only if examples reference real paths in this repository and preserve audience separation
+between `docs/audiences/participant/` and `docs/audiences/facilitator/`.

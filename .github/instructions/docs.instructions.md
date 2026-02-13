@@ -1,6 +1,6 @@
 ---
 description: "Standards for user-facing documentation in this workshop repository"
-applyTo: "docs/**/*.md, README.md, AGENDA.md, challenges/**/*.md, facilitator/**/*.md, participant/**/*.md, feedback-form.md"
+applyTo: "docs/**/*.md, README.md, AGENDA.md, feedback-form.md"
 ---
 
 # Documentation Standards
@@ -19,4 +19,4 @@ applyTo: "docs/**/*.md, README.md, AGENDA.md, challenges/**/*.md, facilitator/**
 ## Consistency Checks
 
 - Keep timing, points, and sequence aligned across `README.md`, `AGENDA.md`, and challenge files.
-- Ensure navigation links resolve and progression is clear from Challenge 0 to Challenge 7.
+- Ensure navigation links resolve and progression is clear from Challenge 00 to Challenge 07.

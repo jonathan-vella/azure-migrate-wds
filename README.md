@@ -61,14 +61,12 @@ graph LR
 azure-migrate-wds/
 ├── README.md                    # You are here
 ├── AGENDA.md                    # Detailed schedule
+├── feedback-form.md             # Workshop feedback form
 ├── docs/                        # Canonical workshop documentation tree
 │   ├── workshop/                # Workshop hub
 │   ├── challenges/              # Challenges 00-07
 │   ├── audiences/               # Participant and facilitator docs
 │   └── operations/scripts/      # Script documentation
-├── challenges/                  # Compatibility stubs to docs/challenges
-├── participant/                 # Compatibility stubs to docs/audiences/participant
-├── facilitator/                 # Compatibility stubs to docs/audiences/facilitator
 └── scripts/                     # PowerShell automation scripts
 ```
 

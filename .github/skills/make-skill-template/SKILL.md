@@ -15,6 +15,6 @@ Use this skill to create new skills that fit this workshop repository.
 
 ## Workshop Constraints
 
-- Preserve facilitator/participant audience separation
+- Preserve audience separation between `docs/audiences/participant/` and `docs/audiences/facilitator/`
 - Avoid non-existent repo assumptions
 - Keep instructions concise and testable

@@ -10,8 +10,8 @@ All agents must research this workshop repo before implementation.
 ## Required Checklist
 
 - Confirm workshop intent in `README.md` and `AGENDA.md`.
-- Confirm audience split in `participant/` and `facilitator/`.
-- Confirm challenge flow and dependencies in `challenges/`.
+- Confirm audience split in `docs/audiences/participant/` and `docs/audiences/facilitator/`.
+- Confirm challenge flow and dependencies in `docs/challenges/`.
 - Confirm script impact in `scripts/` before changing automation.
 - Confirm all referenced links and paths exist.
 

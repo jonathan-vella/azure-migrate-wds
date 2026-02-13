@@ -8,7 +8,7 @@ applyTo: "**/*.{js,mjs,cjs,ts,tsx,jsx,py,ps1,sh,bicep,tf}"
 ## P0 - Must Fix
 
 - Security risks, destructive script behavior without confirmation, or credential leakage
-- Broken links or invalid references in participant/facilitator guidance
+- Broken links or invalid references in participant/facilitator guidance under `docs/audiences/`
 - Scoring logic errors that affect fairness or totals
 
 ## P1 - Should Fix
@@ -26,4 +26,4 @@ applyTo: "**/*.{js,mjs,cjs,ts,tsx,jsx,py,ps1,sh,bicep,tf}"
 
 Use: `Priority | File | Issue | Impact | Suggested fix`.
 
-Always verify audience separation: facilitator-only content must not appear in participant docs.
+Always verify audience separation: facilitator-only content must not appear in participant docs (`docs/audiences/participant/`).
