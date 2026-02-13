@@ -19,19 +19,19 @@ gantt
     section Morning
     Welcome & Azure 101        :welcome, 10:00, 15m
     Scenario Introduction      :scenario, 10:15, 15m
-    Challenge 1: Plan          :crit, c1, 10:30, 45m
-    Challenge 2: Appliance     :active, c2, 11:15, 75m
+    Challenge 1 - Plan         :crit, c1, 10:30, 45m
+    Challenge 2 - Appliance    :active, c2, 11:15, 75m
     
     section Break
     Lunch (Discovery runs)     :lunch, 12:30, 45m
     
     section Afternoon
-    Challenge 3: Assessment    :active, c3, 13:15, 45m
-    Challenge 4: Execute       :crit, c4, 14:00, 30m
+    Challenge 3 - Assessment   :active, c3, 13:15, 45m
+    Challenge 4 - Execute      :crit, c4, 14:00, 30m
     Coffee Break               :break, 14:30, 15m
-    Challenge 5: Curveball     :milestone, c5, 14:45, 30m
-    Challenge 6: Optimize      :c6, 15:15, 45m
-    Challenge 7: Presentations :done, c7, 16:00, 60m
+    Challenge 5 - Curveball    :milestone, c5, 14:45, 0m
+    Challenge 6 - Optimize     :c6, 15:15, 45m
+    Challenge 7 - Presentations:done, c7, 16:00, 60m
 ```
 
 ---

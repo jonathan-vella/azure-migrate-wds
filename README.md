@@ -46,16 +46,16 @@ By the end of this workshop, participants will be able to:
 ```mermaid
 graph LR
     subgraph "Morning - CAF Plan & Prepare"
-        C0[Pre-work<br/>Azure 101] -.-> C1[Challenge 1<br/>Plan & Design]
-        C1 --> C2[Challenge 2<br/>Deploy Appliance]
+        C0["Pre-work<br/>Azure 101"] -.-> C1["Challenge 1<br/>Plan & Design"]
+        C1 --> C2["Challenge 2<br/>Deploy Appliance"]
     end
     
     subgraph "Afternoon - CAF Execute & Optimize"
-        C2 --> C3[Challenge 3<br/>Assess Workloads]
-        C3 --> C4[Challenge 4<br/>Migration Strategy]
-        C4 --> C5[Challenge 5<br/>🎲 Curveball]
-        C5 --> C6[Challenge 6<br/>Optimize & Govern]
-        C6 --> C7[Challenge 7<br/>Present]
+        C2 --> C3["Challenge 3<br/>Assess Workloads"]
+        C3 --> C4["Challenge 4<br/>Migration Strategy"]
+        C4 --> C5["Challenge 5<br/>🎲 Curveball"]
+        C5 --> C6["Challenge 6<br/>Optimize & Govern"]
+        C6 --> C7["Challenge 7<br/>Present"]
     end
 ```
 
