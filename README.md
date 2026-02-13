@@ -27,7 +27,7 @@ By the end of this workshop, participants will be able to:
 
 ### For Participants
 
-- [ ] Basic Azure portal familiarity (complete [Pre-work: Azure 101](challenges/challenge-0-azure-101.md) beforehand)
+- [ ] Basic Azure portal familiarity (complete [Pre-work: Azure 101](docs/challenges/00-azure-101.md) beforehand)
 - [ ] Laptop with modern browser (Edge or Chrome recommended)
 - [ ] Access to team's Azure subscription (provided by facilitator)
 
@@ -35,7 +35,7 @@ By the end of this workshop, participants will be able to:
 
 - [ ] Pre-deployed ArcBox ITPro environment per team
 - [ ] Azure subscription with Owner access per team
-- [ ] Completed [Pre-Deployment Guide](facilitator/pre-deployment-guide.md)
+- [ ] Completed [Pre-Deployment Guide](docs/audiences/facilitator/pre-deployment-guide.md)
 
 ## 🗺️ Workshop Flow
 
@@ -61,27 +61,32 @@ graph LR
 azure-migrate-wds/
 ├── README.md                    # You are here
 ├── AGENDA.md                    # Detailed schedule
-├── challenges/                  # Challenge instructions
-├── participant/                 # Student materials
-├── facilitator/                 # Coach-only materials
-└── scripts/                     # Automation scripts
+├── docs/                        # Canonical workshop documentation tree
+│   ├── workshop/                # Workshop hub
+│   ├── challenges/              # Challenges 00-07
+│   ├── audiences/               # Participant and facilitator docs
+│   └── operations/scripts/      # Script documentation
+├── challenges/                  # Compatibility stubs to docs/challenges
+├── participant/                 # Compatibility stubs to docs/audiences/participant
+├── facilitator/                 # Compatibility stubs to docs/audiences/facilitator
+└── scripts/                     # PowerShell automation scripts
 ```
 
 ## 🚀 Quick Start
 
 ### Participants
 
-1. Review [Pre-Work Checklist](participant/pre-work-checklist.md)
-2. Read [Scenario Brief](participant/scenario-brief.md)
-3. Print [Quick Reference Card](participant/quick-reference-card.md)
-4. Ensure [Pre-work: Azure 101](challenges/challenge-0-azure-101.md) is complete, then start Challenge 1
+1. Review [Pre-Work Checklist](docs/audiences/participant/pre-work-checklist.md)
+2. Read [Scenario Brief](docs/audiences/participant/scenario-brief.md)
+3. Print [Quick Reference Card](docs/audiences/participant/quick-reference-card.md)
+4. Ensure [Pre-work: Azure 101](docs/challenges/00-azure-101.md) is complete, then start Challenge 1
 
 ### Facilitators
 
-1. Complete [Pre-Deployment Guide](facilitator/pre-deployment-guide.md) (day before)
-2. Review [Facilitator Guide](facilitator/facilitator-guide.md)
-3. Prepare [Scoring Rubric](facilitator/scoring-rubric.md)
-4. Keep [Curveball Script](facilitator/curveball-script.md) secret until 14:45!
+1. Complete [Pre-Deployment Guide](docs/audiences/facilitator/pre-deployment-guide.md) (day before)
+2. Review [Facilitator Guide](docs/audiences/facilitator/facilitator-guide.md)
+3. Prepare [Scoring Rubric](docs/audiences/facilitator/scoring-rubric.md)
+4. Keep [Curveball Script](docs/audiences/facilitator/curveball-script.md) secret until 14:45!
 
 ## 🏅 Scoring Overview
 
@@ -106,9 +111,9 @@ azure-migrate-wds/
 ## 📞 Support
 
 - **During Workshop**: Raise hand for facilitator assistance
-- **Technical Issues**: Check [Hints and Tips](participant/hints-and-tips.md)
+- **Technical Issues**: Check [Hints and Tips](docs/audiences/participant/hints-and-tips.md)
 - **Post-Workshop**: [Feedback Form](feedback-form.md)
 
 ---
 
-**Ready to begin?** Complete the [Pre-work: Azure 101](challenges/challenge-0-azure-101.md), then head to the [Agenda](AGENDA.md) for the detailed schedule.
+**Ready to begin?** Complete the [Pre-work: Azure 101](docs/challenges/00-azure-101.md), then head to the [Agenda](AGENDA.md) for the detailed schedule.

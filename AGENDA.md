@@ -220,11 +220,11 @@ gantt
 
 ## Facilitator Notes
 
-- **Pre-event**: Deploy ArcBox environments (see [Pre-Deployment Guide](facilitator/pre-deployment-guide.md))
-- **14:45 sharp**: Announce curveball (see [Curveball Script](facilitator/curveball-script.md))
-- **Throughout**: Use [Scoring Rubric](facilitator/scoring-rubric.md) for consistent evaluation
+- **Pre-event**: Deploy ArcBox environments (see [Pre-Deployment Guide](docs/audiences/facilitator/pre-deployment-guide.md))
+- **14:45 sharp**: Announce curveball (see [Curveball Script](docs/audiences/facilitator/curveball-script.md))
+- **Throughout**: Use [Scoring Rubric](docs/audiences/facilitator/scoring-rubric.md) for consistent evaluation
 - **End of day**: Run cleanup scripts, collect feedback
 
 ---
 
-**Complete before workshop**: [Pre-work: Azure 101](challenges/challenge-0-azure-101.md)
+**Complete before workshop**: [Pre-work: Azure 101](docs/challenges/00-azure-101.md)
