@@ -1,5 +1,9 @@
 # Azure Migration Workshop: From On-Premises to Azure
 
+<p align="center">
+    <img src="https://capsule-render.vercel.app/api?type=waving&height=280&color=0:0ea5e9,50:2563eb,100:7c3aed&text=Azure%20Migration%20Workshop&fontColor=ffffff&fontSize=52&fontAlignY=38&desc=From%20On-Premises%20to%20Azure%20%E2%80%A2%20Hands-On%20Labs%20%2B%20WDS&descAlignY=58&descSize=18" alt="Azure Migration Workshop Banner" />
+</p>
+
 A **1-day hands-on workshop** for IT Professionals combining Azure Migrate appliance labs with whiteboard design sessions, aligned to the [Cloud Adoption Framework Migrate methodology](https://learn.microsoft.com/azure/cloud-adoption-framework/migrate/).
 
 ## 🎯 Workshop Overview
