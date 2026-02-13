@@ -1,40 +1,45 @@
 ## Description
 
-<!-- Provide a brief description of your changes. What does this PR do? Why is it needed? -->
+<!-- Briefly describe what changed and why it is needed. -->
 
 ## Related Issue
 
-<!-- Link to the related issue, e.g., "Fixes #123" or "Closes #456" -->
+<!-- Link the related issue, e.g. "Fixes #123" -->
 
 Fixes #
 
 ## Type of Change
 
-<!-- Mark the appropriate option with an "x" -->
+<!-- Mark all that apply with an "x" -->
 
-- [ ] 🆕 New scenario (S01-S09 format)
-- [ ] 🏗️ New infrastructure module (Bicep/Terraform)
-- [ ] 🤖 Agent definition update (.github/agents/)
-- [ ] 📝 Documentation update
+- [ ] 📘 Participant documentation update
+- [ ] 🧑‍🏫 Facilitator documentation update
+- [ ] 🧩 Challenge flow/content update
+- [ ] 🧮 Scoring/rubric update
+- [ ] 🛠️ Script update (`scripts/*.ps1`)
+- [ ] ⚙️ GitHub instructions/skills/workflow update
 - [ ] 🐛 Bug fix
-- [ ] 🔧 Refactoring (no functional changes)
-- [ ] ⚙️ Configuration/workflow change
-- [ ] 💰 MCP server enhancement (azure-pricing-mcp)
 
-## Workflow Used
+## Affected Areas
 
-<!-- Which agent workflow was used to create these changes? -->
+<!-- Mark all repository areas touched by this PR -->
 
-- [ ] 7-step workflow: `@requirements` → `architect` → `bicep-plan` → `bicep-code`
-- [ ] Direct implementation (simple change)
-- [ ] Copilot Coding Agent (autonomous)
-- [ ] Manual implementation
+- [ ] `README.md` or `AGENDA.md`
+- [ ] `challenges/`
+- [ ] `participant/`
+- [ ] `facilitator/`
+- [ ] `scripts/`
+- [ ] `.github/instructions/`
+- [ ] `.github/skills/`
+- [ ] `.github/workflows/`
 
 ## Changes Made
 
-<!-- Describe the specific changes you made. Include file paths. -->
+<!-- Describe the most important changes and include file paths. -->
 
 **Files added:**
+
+--
 
 - **Files modified:**
 
@@ -42,74 +47,62 @@ Fixes #
 
 ## Testing Performed
 
-<!-- Describe how you tested your changes -->
+<!-- Describe what you validated for this PR -->
 
-### Infrastructure (if applicable)
+### Documentation Validation (if applicable)
 
-- [ ] `bicep build` succeeds for all `.bicep` files
-- [ ] `bicep lint` passes with no errors
-- [ ] Deployed to Azure subscription (region: \***\*\_\_\_\_\*\***)
-- [ ] All resources pass Azure Policy compliance
-- [ ] Resources cleaned up after testing
+- [ ] Reviewed for participant vs facilitator audience separation
+- [ ] Verified challenge sequence and dependencies remain clear
+- [ ] Verified timing/points consistency with `README.md`, `AGENDA.md`, and facilitator rubric
+- [ ] Verified all added/changed internal links
 
-### Code Quality
+### Script Validation (if applicable)
 
-- [ ] Pre-commit hook passed (`npm run lint:md`)
-- [ ] Agent YAML frontmatter validates
-- [ ] MCP server tests pass (`pytest tests/`)
+- [ ] Ran script in safe mode (`-WhatIf`) where supported
+- [ ] Confirmed destructive behavior requires explicit confirmation
+- [ ] Verified script output/messages are clear for facilitators
 
-## Well-Architected Framework Alignment
+### General Validation
 
-<!-- For infrastructure changes, which WAF pillars were considered? -->
+- [ ] No secrets, credentials, tenant IDs, or subscription IDs were added
+- [ ] Markdown remains readable and consistent
+- [ ] Existing workshop flow is not unintentionally broken
 
-- [ ] 🛡️ Security (private endpoints, managed identity, TLS 1.2+)
-- [ ] 🔄 Reliability (zone redundancy, backups, monitoring)
-- [ ] 💰 Cost Optimization (right-sizing, auto-scaling)
-- [ ] ⚡ Performance Efficiency (caching, CDN, scaling)
-- [ ] 🔧 Operational Excellence (IaC, monitoring, alerts)
+## Consistency Checks
+
+<!-- Required when changing workshop content -->
+
+- [ ] Challenge durations still align with the agenda
+- [ ] Points totals still align with scoring rubric and scripts
+- [ ] Curveball timing is consistent across participant/facilitator docs
+- [ ] Facilitator-only content is not exposed in participant docs
 
 ## Pre-Submission Checklist
 
 <!-- Verify all items before requesting review -->
 
-### Code Standards
+### Documentation & Content Standards
 
-- [ ] Region defaults to `swedencentral` (or `germanywestcentral`)
-- [ ] Unique suffixes used for globally-unique resource names
-- [ ] Resource names within length limits (Key Vault ≤24, Storage ≤24)
-- [ ] Required tags included (Environment, ManagedBy, Project, Owner)
-- [ ] No hardcoded secrets, subscription IDs, or sensitive data
-- [ ] Uses Azure Verified Modules (AVM) where available
+- [ ] Objective/timebox/deliverables are clear in challenge-style docs
+- [ ] Terminology remains aligned with CAF Migrate and Azure Migrate
+- [ ] Audience separation preserved (`participant/` vs `facilitator/`)
 
-### Documentation
+### Script Standards (if applicable)
 
-- [ ] README updated with any new features
-- [ ] DEMO-SCRIPT.md included (for scenarios)
-- [ ] Effective prompts documented
-- [ ] Architecture diagram included (Python diagrams-as-code)
-- [ ] Cost estimate provided (for significant infrastructure)
+- [ ] Parameters and usage examples are accurate
+- [ ] Safe defaults are preserved
+- [ ] Any script behavior change is reflected in `scripts/README.md`
 
-### Validation
+### Repository Hygiene
 
-- [ ] Markdown linting passes: `npm run lint:md`
-- [ ] All internal links verified
-- [ ] CI workflow passes
-- [ ] CHANGELOG.md updated (for releases)
+- [ ] Paths in `.github/instructions` and `.github/skills` reference real files/folders
+- [ ] No stale references to old infra-delivery workflows remain
+- [ ] CI/workflow checks pass (if applicable)
 
-## Screenshots / Architecture Diagram
+## Screenshots / Supporting Material
 
-<!-- Add architecture diagrams or screenshots if applicable -->
+<!-- Add screenshots, whiteboard captures, diagrams, or script output when helpful -->
 
 ## Additional Notes
 
 <!-- Add any other context for reviewers -->
-
-### Deployment Instructions (if applicable)
-
-```bash
-# Example deployment command
-az deployment group create \
-  --resource-group rg-project-dev \
-  --template-file infra/bicep/project/main.bicep \
-  --parameters environment=dev
-```
