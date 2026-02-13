@@ -1,6 +1,13 @@
 # Challenge 3: Assessment
 
-> **Duration**: 45 minutes | **Type**: Hands-on Lab | **Points**: 20
+## Challenge Snapshot
+
+| Field | Value |
+|---|---|
+| Duration | 45 minutes |
+| Type | Hands-on Lab |
+| Points | 20 |
+| Deliverable | Azure VM and SQL assessment outputs with readiness findings |
 
 ## Objective
 
@@ -59,7 +66,7 @@ Before starting this challenge, ensure:
    - Performance data (if available)
    - Dependencies (if enabled)
 
-**Verify**:
+✅ **Verify**:
 - [ ] At least 5 servers discovered
 - [ ] Can view server details
 
@@ -95,7 +102,7 @@ Before starting this challenge, ensure:
    - Note the **Azure readiness** summary
    - Review **Monthly cost estimate**
 
-**Verify**:
+✅ **Verify**:
 - [ ] Assessment created
 - [ ] Readiness results visible
 - [ ] Cost estimate generated
@@ -149,9 +156,9 @@ Look at the **confidence rating** (1-5 stars):
 | ⭐⭐ | Limited data |
 | ⭐ | Minimal data |
 
-> 💡 Lower confidence often means discovery hasn't run long enough for performance data
+> 💡 **Tip**: Lower confidence often means discovery hasn't run long enough for performance data
 
-**Verify**:
+✅ **Verify**:
 - [ ] Documented readiness for all servers
 - [ ] Noted cost estimate
 - [ ] Checked confidence rating
@@ -186,14 +193,14 @@ Look at the **confidence rating** (1-5 stars):
 - Are there any compatibility issues?
 - What's the estimated SQL cost?
 
-**Verify**:
+✅ **Verify**:
 - [ ] SQL assessment created
 - [ ] Target recommendation noted
 - [ ] Compatibility reviewed
 
 ---
 
-## Export Your Findings
+## Expected Deliverables
 
 1. Click **Export assessment** to download Excel file
 
@@ -219,7 +226,7 @@ Look at the **confidence rating** (1-5 stars):
 
 ---
 
-## Troubleshooting
+### ⚠️ Watch out
 
 | Issue | Solution |
 |-------|----------|
@@ -231,7 +238,7 @@ Look at the **confidence rating** (1-5 stars):
 
 ---
 
-## Coaching Tips
+## 💡 Tip
 
 💡 **Performance data improves over time** — Initial assessments may have lower confidence
 
@@ -243,7 +250,14 @@ Look at the **confidence rating** (1-5 stars):
 
 ---
 
-## What Just Happened?
+## ⚠️ Watch out
+
+- Low-confidence assessments can mislead decisions; validate data quality before finalizing recommendations.
+- Ensure SQL discovery credentials are correct before assuming incompatibility.
+
+---
+
+### What Just Happened?
 
 You created assessments that:
 
@@ -257,7 +271,7 @@ This data drives migration decisions!
 
 ---
 
-## Reflection Questions
+### Reflection Questions
 
 - Did the assessment results match your expectations from Challenge 1?
 - What surprised you about the readiness results?

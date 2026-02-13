@@ -1,6 +1,13 @@
 # Challenge 4: Execute
 
-> **Duration**: 30 minutes | **Type**: Whiteboard Design Session | **Points**: 15
+## Challenge Snapshot
+
+| Field | Value |
+|---|---|
+| Duration | 30 minutes |
+| Type | Whiteboard Design Session |
+| Points | 15 |
+| Deliverable | Migration runbook outline with sequencing and rollback strategy |
 
 ## Objective
 
@@ -206,7 +213,7 @@ By the end of this challenge, your whiteboard should show:
 
 ---
 
-## Coaching Tips
+## 💡 Tip
 
 💡 **Start simple** — Monitoring server is a great pilot candidate
 
@@ -220,7 +227,7 @@ By the end of this challenge, your whiteboard should show:
 
 ---
 
-## Reference: Migration Types
+### Reference: Migration Types
 
 | Type | Description | Downtime | Best For |
 |------|-------------|----------|----------|
@@ -232,7 +239,7 @@ By the end of this challenge, your whiteboard should show:
 
 ---
 
-## Reference: CAF Migrate Execution Checklist
+### Reference: CAF Migrate Execution Checklist
 
 - [ ] Landing zone configured
 - [ ] Network connectivity established
@@ -247,7 +254,14 @@ By the end of this challenge, your whiteboard should show:
 
 ---
 
-## Reflection Questions
+### Reflection Questions
+
+---
+
+## ⚠️ Watch out
+
+- A strong plan without rollback detail increases execution risk.
+- Keep cutover communication and DNS steps explicit in your runbook.
 
 - How did your assessment results influence tool selection?
 - What dependencies created constraints in your sequencing?

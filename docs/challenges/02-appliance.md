@@ -1,6 +1,13 @@
 # Challenge 2: Deploy Azure Migrate Appliance
 
-> **Duration**: 75 minutes | **Type**: Hands-on Lab | **Points**: 25
+## Challenge Snapshot
+
+| Field | Value |
+|---|---|
+| Duration | 75 minutes |
+| Type | Hands-on Lab |
+| Points | 25 |
+| Deliverable | Registered Azure Migrate appliance with discovery started |
 
 ## Objective
 
@@ -60,9 +67,9 @@ Before starting this challenge, ensure:
 
 7. Click **Generate key**
 
-   > ⚠️ **IMPORTANT**: Copy this key and save it — you'll need it for registration!
+   > ⚠️ **Watch out**: Copy this key and save it — you'll need it for registration!
 
-**Verify**:
+✅ **Verify**:
 - [ ] Azure Migrate project created
 - [ ] Project key generated and saved
 
@@ -74,7 +81,7 @@ Before starting this challenge, ensure:
 
 2. Click **Download** to get the VHD file (~8-10 GB)
 
-   > 💡 While downloading, proceed to connect to your ArcBox environment
+   > 💡 **Tip**: While downloading, proceed to connect to your ArcBox environment
 
 3. **Connect to ArcBox-Client VM**:
    
@@ -106,7 +113,7 @@ Before starting this challenge, ensure:
    - Set language and keyboard
    - Set administrator password (document this!)
 
-**Verify**:
+✅ **Verify**:
 - [ ] VHD downloaded
 - [ ] Appliance imported into Hyper-V
 - [ ] Appliance VM running
@@ -144,7 +151,7 @@ Before starting this challenge, ensure:
    
    g. Verify: **"Successfully registered"**
 
-**Verify**:
+✅ **Verify**:
 - [ ] Appliance configuration manager accessible
 - [ ] Prerequisites passed
 - [ ] Appliance registered with Azure
@@ -183,9 +190,9 @@ Before starting this challenge, ensure:
    | Linux | `LinuxAdmin` | arcbox | Ubuntu VMs |
    | SQL Server | `SQLAdmin` | sa (if applicable) | SQL instance discovery |
 
-   > 💡 Get exact credentials from [ArcBox Environment](../audiences/participant/arcbox-environment.md)
+   > 💡 **Tip**: Get exact credentials from [ArcBox Environment](../audiences/participant/arcbox-environment.md)
 
-**Verify**:
+✅ **Verify**:
 - [ ] Hyper-V host credentials added
 - [ ] Hyper-V host validated successfully
 - [ ] Server credentials added (Windows, Linux)
@@ -213,9 +220,19 @@ Before starting this challenge, ensure:
      - ArcBox-Ubuntu-01
      - ArcBox-Ubuntu-02
 
-**Verify**:
+✅ **Verify**:
 - [ ] Discovery started successfully
 - [ ] Servers beginning to appear in Azure portal
+
+---
+
+## Expected Deliverables
+
+By the end of this challenge, your team should provide:
+
+1. ✅ Azure Migrate project and generated key
+2. ✅ Registered appliance with validated discovery sources
+3. ✅ Discovery started with ArcBox servers appearing in Azure
 
 ---
 
@@ -232,7 +249,7 @@ Before starting this challenge, ensure:
 
 ---
 
-## Troubleshooting
+### ⚠️ Watch out
 
 | Issue | Solution |
 |-------|----------|
@@ -245,7 +262,7 @@ Before starting this challenge, ensure:
 
 ---
 
-## Coaching Tips
+## 💡 Tip
 
 💡 **Work in parallel** — One person downloads VHD while another creates the Migrate project
 
@@ -257,7 +274,14 @@ Before starting this challenge, ensure:
 
 ---
 
-## What Just Happened?
+## ⚠️ Watch out
+
+- Validate appliance networking and WinRM early to avoid late discovery failures.
+- Keep project key and credentials secure and accessible to the team.
+
+---
+
+### What Just Happened?
 
 You deployed the Azure Migrate appliance, which:
 

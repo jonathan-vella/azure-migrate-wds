@@ -16,6 +16,14 @@ applyTo: "docs/**/*.md, README.md, AGENDA.md, feedback-form.md"
 - Keep terminology consistent with CAF Migrate and Azure Migrate workflows.
 - Use actionable steps and concrete deliverables.
 
+## Challenge Template Requirements
+
+- New challenge guides in `docs/challenges/` must follow the canonical structure in
+	`.github/skills/challenge-guide-styler/references/challenge-template.md`.
+- Required sections: `Challenge Snapshot`, `Objective`, `The Business Challenge`, `Your Tasks`,
+	`Expected Deliverables`, and `Success Criteria`.
+- Keep challenge guides participant-friendly: concise, scannable, and task-first.
+
 ## Consistency Checks
 
 - Keep timing, points, and sequence aligned across `README.md`, `AGENDA.md`, and challenge files.

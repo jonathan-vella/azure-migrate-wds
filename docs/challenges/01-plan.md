@@ -1,6 +1,13 @@
 # Challenge 1: Plan
 
-> **Duration**: 45 minutes | **Type**: Whiteboard Design Session | **Points**: 25
+## Challenge Snapshot
+
+| Field | Value |
+|---|---|
+| Duration | 45 minutes |
+| Type | Whiteboard Design Session |
+| Points | 25 |
+| Deliverable | Whiteboard assessment strategy and migration wave plan |
 
 ## Objective
 
@@ -28,7 +35,17 @@ Your simulated on-premises environment (ArcBox) contains:
 
 ---
 
-## Your Challenge
+## Prerequisites
+
+Before starting this challenge, ensure:
+
+- [ ] Azure 101 pre-work is complete
+- [ ] Team roles are assigned (facilitator, scribe, presenter, reviewer)
+- [ ] Whiteboard or flip chart is available
+
+---
+
+## Your Tasks
 
 Work with your team to design the **assessment and wave planning strategy** on your whiteboard.
 
@@ -136,12 +153,12 @@ By the end of this challenge, your whiteboard should show:
 
 ---
 
-## 📝 Fill-in-the-Blanks Template
+### 📝 Fill-in-the-Blanks Template
 
 Use this template to capture your team's decisions:
 
 ```markdown
-## Team: ________________
+### Team: ________________
 
 ### Assessment Strategy
 - Discovery tool: _______________________________
@@ -195,7 +212,7 @@ Use this template to capture your team's decisions:
 
 ---
 
-## Coaching Tips
+## 💡 Tip
 
 💡 **Start with business impact** — Which workloads matter most to Contoso?
 
@@ -207,7 +224,7 @@ Use this template to capture your team's decisions:
 
 ---
 
-## Reference: CAF Migrate Phases
+### Reference: CAF Migrate Phases
 
 ```
 ┌─────────┐   ┌─────────┐   ┌─────────┐   ┌──────────┐   ┌─────────────┐
@@ -219,7 +236,14 @@ Use this template to capture your team's decisions:
 
 ---
 
-## Reflection Questions
+### Reflection Questions
+
+---
+
+## ⚠️ Watch out
+
+- Avoid over-optimizing wave design without validating dependencies.
+- Keep migration rationale evidence-based, not assumption-only.
 
 After completing this challenge, consider:
 

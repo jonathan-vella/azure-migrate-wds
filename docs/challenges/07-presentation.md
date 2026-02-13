@@ -1,6 +1,13 @@
 # Challenge 7: Presentation
 
-> **Duration**: 45 minutes | **Type**: Team Presentations | **Points**: 5
+## Challenge Snapshot
+
+| Field | Value |
+|---|---|
+| Duration | 45 minutes |
+| Type | Team Presentations |
+| Points | 5 |
+| Deliverable | 8-minute team chalk-talk with objection handling |
 
 ## Objective
 
@@ -16,7 +23,17 @@ After your presentation, you'll face 3 objections that you must handle convincin
 
 ---
 
-## Presentation Format
+## Prerequisites
+
+Before starting this challenge, ensure:
+
+- [ ] Challenges 1-6 artifacts are complete and available
+- [ ] Your team has agreed on speaking order and timekeeper
+- [ ] Whiteboard photos and key outputs are ready to present
+
+---
+
+## Your Tasks
 
 ### Chalk-Talk Style
 
@@ -34,7 +51,7 @@ This is NOT a slide presentation. Use your whiteboard photos and diagrams to wal
 
 ---
 
-## Required Content
+### Required Content
 
 Your presentation must cover:
 
@@ -77,7 +94,7 @@ Your presentation must cover:
 
 ---
 
-## Mandatory Objections
+### Mandatory Objections
 
 After your presentation, facilitators will raise **3 objections** you must address:
 
@@ -110,6 +127,16 @@ After your presentation, facilitators will raise **3 objections** you must addre
 
 ---
 
+## Expected Deliverables
+
+By the end of this challenge, your team should provide:
+
+1. ✅ An 8-minute chalk-talk covering all required sections
+2. ✅ Clear responses to all 3 mandatory objections
+3. ✅ A concise migration recommendation with business justification
+
+---
+
 ## Success Criteria (5 Points)
 
 | Criterion | Points | Description |
@@ -120,7 +147,7 @@ After your presentation, facilitators will raise **3 objections** you must addre
 
 ---
 
-## Presentation Order
+### Presentation Order
 
 There are **4 teams**, and each team has exactly **12 minutes** (8 min presentation + 4 min objections). Strict timekeeping ensures all teams present.
 
@@ -154,31 +181,31 @@ gantt
     Objections      :t4o, after t4p, 4m
 ```
 
-> ⚠️ Time is strictly enforced. Practice to stay within 8 minutes!
+> ⚠️ **Watch out**: Time is strictly enforced. Practice to stay within 8 minutes!
 
 ---
 
-## Tips for Success
+## 💡 Tip
 
 ### Do:
 
-- ✅ Use your whiteboard photos as visual aids
-- ✅ Have different team members present different sections
-- ✅ Speak to the business value, not just technical details
-- ✅ Acknowledge trade-offs and risks honestly
-- ✅ Be concise — every second counts
+- ✅ Use your whiteboard photos as visual aids.
+- ✅ Have different team members present different sections.
+- ✅ Speak to the business value, not just technical details.
+- ✅ Acknowledge trade-offs and risks honestly.
+- ✅ Be concise — every second counts.
 
 ### Don't:
 
-- ❌ Read from notes word-for-word
-- ❌ Go over time (you will be cut off)
-- ❌ Let one person do all the talking
-- ❌ Be defensive about objections — address them directly
-- ❌ Make up numbers — use your actual assessment data
+- ❌ Read from notes word-for-word.
+- ❌ Go over time (you will be cut off).
+- ❌ Let one person do all the talking.
+- ❌ Be defensive about objections — address them directly.
+- ❌ Make up numbers — use your actual assessment data.
 
 ---
 
-## Peer Appreciation
+### Peer Appreciation
 
 While other teams present, consider:
 
@@ -190,7 +217,7 @@ After all presentations, you'll have a chance to share appreciations.
 
 ---
 
-## Evaluation Rubric
+### Evaluation Rubric
 
 Facilitators will score based on:
 
@@ -204,7 +231,7 @@ Facilitators will score based on:
 
 ---
 
-## Preparation Checklist
+### Preparation Checklist
 
 Before presenting:
 
@@ -216,7 +243,7 @@ Before presenting:
 
 ---
 
-## After Presentations
+### After Presentations
 
 ### Leaderboard Reveal
 
@@ -239,7 +266,7 @@ Facilitator-led discussion:
 
 ---
 
-## Reflection Questions
+### Reflection Questions
 
 After all presentations:
 
@@ -249,7 +276,16 @@ After all presentations:
 
 ---
 
-## Workshop Complete! 🎉
+## ⚠️ Watch out
+
+- Going over time reduces score impact even with strong technical content.
+- Weak objection handling can outweigh a polished opening presentation.
+
+---
+
+## Next Step
+
+### Workshop Complete! 🎉
 
 Congratulations on completing the Azure Migration Workshop!
 

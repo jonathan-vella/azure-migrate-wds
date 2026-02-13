@@ -6,6 +6,7 @@ This repository uses a workshop-first skill set.
 
 - `docs-writer`: keeps workshop documentation consistent and fresh
 - `azure-diagrams`: creates migration-focused diagrams for workshop materials
+- `challenge-guide-styler`: applies challenge template and visual style standards
 
 ## Utility Skills
 

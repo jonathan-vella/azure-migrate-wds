@@ -1,6 +1,13 @@
 # Challenge 6: Optimize
 
-> **Duration**: 45 minutes | **Type**: Whiteboard Design Session | **Points**: —
+## Challenge Snapshot
+
+| Field | Value |
+|---|---|
+| Duration | 45 minutes |
+| Type | Whiteboard Design Session |
+| Points | — |
+| Deliverable | Cost optimization and governance design with hybrid strategy |
 
 ## Objective
 
@@ -219,7 +226,17 @@ Add to your whiteboard:
 
 ---
 
-## Coaching Tips
+## Success Criteria
+
+| Criterion | Verification |
+|-----------|--------------|
+| Cost summary completed | Monthly and annual totals are documented |
+| Optimization plan defined | Savings actions are realistic and prioritized |
+| Governance and hybrid strategy aligned | Policy, RBAC, and Arc approach are clearly described |
+
+---
+
+## 💡 Tip
 
 💡 **Hybrid Benefit is often forgotten** — Big savings if licenses exist
 
@@ -233,7 +250,7 @@ Add to your whiteboard:
 
 ---
 
-## Reference: Azure Cost Management Tools
+### Reference: Azure Cost Management Tools
 
 | Tool | Purpose | When to Use |
 |------|---------|-------------|
@@ -245,7 +262,7 @@ Add to your whiteboard:
 
 ---
 
-## Reference: Well-Architected Framework - Cost Optimization
+### Reference: Well-Architected Framework - Cost Optimization
 
 Key principles:
 1. **Plan and estimate costs** — Before deployment
@@ -256,7 +273,7 @@ Key principles:
 
 ---
 
-## Bonus Points Opportunity! (+5)
+### Bonus Points Opportunity! (+5)
 
 Impress the judges with advanced cost optimization:
 
@@ -267,7 +284,14 @@ Impress the judges with advanced cost optimization:
 
 ---
 
-## Reflection Questions
+### Reflection Questions
+
+---
+
+## ⚠️ Watch out
+
+- Underestimating governance can erase savings through sprawl and misconfiguration.
+- Commit discounts should follow observed usage patterns, not assumptions.
 
 - What surprised you about the cost estimates?
 - How does governance impact cost management?

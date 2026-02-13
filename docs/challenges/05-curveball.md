@@ -1,8 +1,38 @@
 # Challenge 5: Curveball 🎲
 
-> **Duration**: 30 minutes | **Type**: Whiteboard Design Session | **Points**: 10
+## Challenge Snapshot
 
-## ⚠️ STOP — Wait for Facilitator Announcement!
+| Field | Value |
+|---|---|
+| Duration | 30 minutes |
+| Type | Whiteboard Design Session |
+| Points | 10 |
+| Deliverable | Updated migration architecture and GDPR compliance approach |
+
+## Objective
+
+Adapt your migration design to a late-stage compliance requirement and document a defensible GDPR approach.
+
+---
+
+## The Business Challenge
+
+Late-breaking business constraints can change migration plans mid-stream. Your team must rapidly assess impact,
+update architecture choices, and justify decisions with compliance-first reasoning.
+
+---
+
+## Prerequisites
+
+Before starting this challenge, ensure:
+
+- [ ] Challenge 4 outputs are complete and available
+- [ ] Team has access to current architecture and migration plan
+- [ ] Facilitator has announced the curveball at 14:45
+
+---
+
+### ⚠️ STOP — Wait for Facilitator Announcement!
 
 Do not read beyond this point until your facilitator announces the curveball at **14:45**.
 
@@ -13,7 +43,7 @@ Do not read beyond this point until your facilitator announces the curveball at 
 
 ---
 
-## 📢 BREAKING NEWS FROM CONTOSO
+### 📢 BREAKING NEWS FROM CONTOSO
 
 > **From**: IT Manager, Contoso Bakery  
 > **To**: Migration Team  
@@ -40,7 +70,7 @@ Do not read beyond this point until your facilitator announces the curveball at 
 
 ---
 
-## The Challenge
+### Curveball Details
 
 Your migration plan just got more complicated. You need to:
 
@@ -131,7 +161,7 @@ Document how you'll address GDPR requirements:
 
 ---
 
-## Updated Deliverables
+## Expected Deliverables
 
 Add to your existing whiteboard:
 
@@ -162,7 +192,7 @@ Add to your existing whiteboard:
 
 ---
 
-## Coaching Tips
+## 💡 Tip
 
 💡 **SQL database is the obvious one** — But don't forget logs and backups!
 
@@ -176,7 +206,7 @@ Add to your existing whiteboard:
 
 ---
 
-## Reference: EU Azure Regions
+### Reference: EU Azure Regions
 
 | Region Name | Region Code | Notes |
 |-------------|-------------|-------|
@@ -195,7 +225,7 @@ Add to your existing whiteboard:
 
 ---
 
-## Reflection Questions
+### Reflection Questions
 
 - How did this surprise change your perception of migration complexity?
 - What would you have done differently in Challenge 1 if you knew this was coming?
@@ -203,13 +233,20 @@ Add to your existing whiteboard:
 
 ---
 
-## What Just Happened?
+### What Just Happened?
+
+---
+
+## ⚠️ Watch out
+
+- Do not assume EU compliance is only about primary data stores; include logs, backups, and replicas.
+- Revalidate DR and cross-region settings after architecture updates.
 
 Welcome to the real world! Migration projects frequently encounter:
-- New compliance requirements discovered mid-project
-- Changes in legal/regulatory landscape
-- Stakeholders who remember requirements late
-- Audit findings that force architecture changes
+- New compliance requirements discovered mid-project.
+- Changes in legal/regulatory landscape.
+- Stakeholders who remember requirements late.
+- Audit findings that force architecture changes.
 
 The ability to adapt your plan is just as important as creating it!
 
