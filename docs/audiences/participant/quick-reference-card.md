@@ -70,7 +70,7 @@
 | C2: Appliance | 25 | Deploy, register, discover |
 | C3: Assessment | 20 | Create, analyze, document |
 | C4: Execute | 15 | Tools, sequence, rollback |
-| C5: Curveball | 10 | GDPR adaptation |
+| C5: Curveball | 10 | Compliance adaptation |
 | C7: Presentation | 5 | Delivery, objections |
 | **Total** | **100** | |
 
@@ -88,7 +88,7 @@ PLAN → PREPARE → EXECUTE → OPTIMIZE → DECOMMISSION
 
 1. **PaaS vs IaaS**: Why SQL on VM vs Managed Instance?
 2. **Rollback**: Walk through exact steps to revert
-3. **GDPR**: How to guarantee EU data residency?
+3. **Data sovereignty**: How will you address data-location requirements?
 
 ---
 

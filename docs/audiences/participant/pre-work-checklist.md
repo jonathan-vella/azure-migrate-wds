@@ -1,6 +1,6 @@
 # Pre-Work Checklist
 
-> **Complete these items BEFORE the workshop** to ensure a smooth start.  
+> **Complete these items BEFORE the workshop** to ensure a smooth start.
 > Estimated time: 15-30 minutes
 
 ---
@@ -59,8 +59,8 @@ If you're new to Azure, review these concepts before the workshop:
 
 ### Quick Videos
 
-- [Azure Fundamentals in 5 minutes](https://www.youtube.com/watch?v=NKEFWyqJ5XA)
-- [Azure Migrate Overview](https://www.youtube.com/watch?v=SAQwYb9F-_c)
+- [Azure Fundamentals in 5 minutes — "What is Azure?"](https://www.youtube.com/watch?v=NKEFWyqJ5XA)
+- [Azure Migrate Overview — "Migrate to Azure"](https://www.youtube.com/watch?v=SAQwYb9F-_c)
 
 ---
 
