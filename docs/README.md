@@ -1,10 +1,12 @@
 # Workshop Docs Hub
 
-This folder is the workshop documentation index for the reorganized structure.
+Central index for all Azure Migration Workshop documentation. Each section targets a specific audience or purpose.
 
-- Workshop overview: [README.md](../README.md)
-- Detailed agenda: [AGENDA.md](../AGENDA.md)
-- Challenge sequence: [Challenges](challenges/README.md)
-- Participant materials: [Participant](audiences/participant/README.md)
-- Facilitator materials: [Facilitator](audiences/facilitator/README.md)
-- Script operations: [Scripts](operations/scripts/README.md)
+| Section | Description |
+|---------|-------------|
+| [Workshop Overview](../README.md) | Top-level introduction, quick start, and scoring |
+| [Detailed Agenda](../AGENDA.md) | Minute-by-minute schedule and Gantt timeline |
+| [Challenges](challenges/README.md) | Challenge guides 00–07 with progression and scoring |
+| [Participant Materials](audiences/participant/README.md) | Scenario brief, environment reference, hints |
+| [Facilitator Materials](audiences/facilitator/README.md) | Coaching guide, scoring rubric, curveball script |
+| [Script Documentation](operations/scripts/README.md) | PowerShell automation for scoring and cleanup |

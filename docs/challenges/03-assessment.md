@@ -40,7 +40,7 @@ Before starting this challenge, ensure:
 
 ## Your Tasks
 
-### Part A: Verify Discovered Servers (10 min)
+### Part A: Verify Discovered Servers (5 min)
 
 1. Navigate to **Azure Migrate** → **Servers, databases and web apps**
 
@@ -72,7 +72,7 @@ Before starting this challenge, ensure:
 
 ---
 
-### Part B: Create Azure VM Assessment (20 min)
+### Part B: Create Azure VM Assessment (15 min)
 
 1. In Azure Migrate, click **Assess** → **Azure VM**
 
@@ -80,7 +80,7 @@ Before starting this challenge, ensure:
 
    | Setting | Recommended Value | Notes |
    |---------|-------------------|-------|
-   | Target location | **Sweden Central** | EU region for GDPR compliance |
+   | Target location | **Sweden Central** | Nearest EU region to Contoso |
    | Storage type | **Automatic** | Let Azure recommend |
    | Savings options | **Pay-as-you-go** | For initial estimate |
    | Sizing criteria | **Performance-based** | Uses collected metrics |
@@ -109,7 +109,7 @@ Before starting this challenge, ensure:
 
 ---
 
-### Part C: Analyze Readiness Results (15 min)
+### Part C: Analyze Readiness Results (10 min)
 
 Click into your assessment and explore each section:
 
@@ -226,7 +226,7 @@ Look at the **confidence rating** (1-5 stars):
 
 ---
 
-### ⚠️ Watch out
+## ⚠️ Watch out
 
 | Issue | Solution |
 |-------|----------|
@@ -236,24 +236,17 @@ Look at the **confidence rating** (1-5 stars):
 | SQL not discovered | Verify SQL credentials, check SQL instance is running |
 | Cost seems wrong | Check VM series selection, verify region |
 
+- Low-confidence assessments can mislead decisions; validate data quality before finalizing recommendations.
+- Ensure SQL discovery credentials are correct before assuming incompatibility.
+
 ---
 
 ## 💡 Tip
 
-💡 **Performance data improves over time** — Initial assessments may have lower confidence
-
-💡 **Review the "Why" not just "What"** — Click into each server to understand recommendations
-
-💡 **Cost is estimate only** — Actual costs depend on usage, reserved instances, hybrid benefit
-
-💡 **Compare to your Challenge 1 plan** — Does reality match your assumptions?
-
----
-
-## ⚠️ Watch out
-
-- Low-confidence assessments can mislead decisions; validate data quality before finalizing recommendations.
-- Ensure SQL discovery credentials are correct before assuming incompatibility.
+- **Performance data improves over time** — Initial assessments may have lower confidence
+- **Review the "Why" not just "What"** — Click into each server to understand recommendations
+- **Cost is estimate only** — Actual costs depend on usage, reserved instances, hybrid benefit
+- **Compare to your Challenge 1 plan** — Does reality match your assumptions?
 
 ---
 
@@ -271,7 +264,7 @@ This data drives migration decisions!
 
 ---
 
-### Reflection Questions
+## Reflection Questions
 
 - Did the assessment results match your expectations from Challenge 1?
 - What surprised you about the readiness results?
@@ -282,3 +275,7 @@ This data drives migration decisions!
 ## Next Step
 
 Bring your assessment findings to [Challenge 4: Execute](04-execute.md) where you'll design the detailed migration strategy.
+
+---
+
+← [Challenge 2: Deploy Appliance](02-appliance.md) | [Challenges Overview](README.md) | [Challenge 4: Execute](04-execute.md) →

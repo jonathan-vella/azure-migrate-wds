@@ -49,7 +49,7 @@ graph LR
         C0["Pre-work<br/>Azure 101"] -.-> C1["Challenge 1<br/>Plan & Design"]
         C1 --> C2["Challenge 2<br/>Deploy Appliance"]
     end
-    
+
     subgraph "Afternoon - CAF Execute & Optimize"
         C2 --> C3["Challenge 3<br/>Assess Workloads"]
         C3 --> C4["Challenge 4<br/>Migration Strategy"]
@@ -67,7 +67,6 @@ azure-migrate-wds/
 ├── AGENDA.md                    # Detailed schedule
 ├── feedback-form.md             # Workshop feedback form
 ├── docs/                        # Canonical workshop documentation tree
-│   ├── workshop/                # Workshop hub
 │   ├── challenges/              # Challenges 00-07
 │   ├── audiences/               # Participant and facilitator docs
 │   └── operations/scripts/      # Script documentation

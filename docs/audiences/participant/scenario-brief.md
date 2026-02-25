@@ -98,11 +98,11 @@ Your simulated on-premises datacenter (represented by ArcBox) contains:
 
 ### IT Manager (also acting as CISO)
 
-> "Our B2B customers trust us with their order data. We need to make sure we're handling it properly — I've heard about GDPR but we've never had a formal compliance review."
+> "Our B2B customers trust us with their order data. We need to make sure we're handling it properly — I've heard about data protection regulations but we've never had a formal compliance review."
 
 **Priorities**:
 - Data protection basics
-- GDPR awareness
+- Regulatory awareness
 - Security fundamentals in Azure
 
 ### Operations Supervisor
@@ -123,7 +123,7 @@ Your simulated on-premises datacenter (represented by ArcBox) contains:
 | **Downtime window** | Weekends only (Sat 18:00 - Sun 12:00) |
 | **Timeline** | Complete migration within 3 months |
 | **Budget** | €15,000 for migration (tooling, any consulting) |
-| **Data residency** | Customer data should stay in EU (GDPR) |
+| **Data sovereignty** | Some stakeholders have raised data location preferences — to be confirmed |
 | **Skills** | IT team has limited Azure experience |
 
 ---
@@ -134,7 +134,7 @@ The migration will be considered successful when:
 
 1. ✅ All 5 servers migrated to Azure (or managed via Arc)
 2. ✅ Applications functional with same or better performance
-3. ✅ GDPR compliance requirements met and documented
+3. ✅ Data protection requirements met and documented
 4. ✅ Monitoring operational with comparable visibility
 5. ✅ IT team trained on Azure operations
 6. ✅ Total cost of ownership reduced by 15% or justified
@@ -148,7 +148,7 @@ As the migration consulting team, you will:
 1. **Discover and assess** the current environment using Azure Migrate
 2. **Design a migration strategy** aligned with Cloud Adoption Framework
 3. **Plan migration waves** with proper sequencing and dependencies
-4. **Address compliance requirements** including GDPR
+4. **Address compliance requirements** as they emerge
 5. **Optimize for cost** and design governance controls
 6. **Present your plan** to Contoso Bakery leadership
 
@@ -161,7 +161,7 @@ As you work through the challenges, think about:
 - Which workload is the best pilot candidate?
 - How do you handle the SQL database migration?
 - What happens if the web server migration fails on Sunday morning?
-- How will you address GDPR for customer order data?
+- How will you address data protection for customer order data?
 - What's your recommendation for the monitoring server?
 
 ---

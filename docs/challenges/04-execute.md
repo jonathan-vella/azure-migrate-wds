@@ -39,7 +39,7 @@ Before starting this challenge, ensure:
 
 ## Your Tasks
 
-### Part A: Tool Selection (15 min)
+### Part A: Tool Selection (10 min)
 
 For each workload type, select the appropriate Azure migration tool:
 
@@ -75,7 +75,7 @@ For each server, document your tool choice:
 
 ---
 
-### Part B: Migration Sequencing (15 min)
+### Part B: Migration Sequencing (10 min)
 
 Design the detailed migration sequence considering:
 
@@ -89,17 +89,17 @@ Design the detailed migration sequence considering:
 gantt
     title Migration Wave Plan
    dateFormat YYYY-MM-DD
-    
+
     section Wave 1
     Prep & Validation      :prep1, 2024-01-15, 2d
    Migrate Server A       :migrate1, after prep1, 1d
     Testing & Validation   :test1, after migrate1, 2d
-    
+
     section Wave 2
     Prep & Dependencies    :prep2, after test1, 1d
    Migrate Server B,C     :migrate2, after prep2, 2d
     Testing & Validation   :test2, after migrate2, 2d
-    
+
     section Wave 3
     Final Prep             :prep3, after test2, 1d
    Migrate SQL/App        :crit, migrate3, after prep3, 2d
@@ -135,7 +135,7 @@ gantt
 
 ---
 
-### Part C: Rollback Strategy (15 min)
+### Part C: Rollback Strategy (10 min)
 
 Every migration needs a fallback plan. Design yours:
 
@@ -215,15 +215,11 @@ By the end of this challenge, your whiteboard should show:
 
 ## 💡 Tip
 
-💡 **Start simple** — Monitoring server is a great pilot candidate
-
-💡 **SQL is often the hardest** — Plan extra time and testing
-
-💡 **Parallel is faster, serial is safer** — Find the right balance
-
-💡 **Communication plan matters** — Who knows when each wave happens?
-
-💡 **Don't forget DNS** — Traffic routing is often the final cutover step
+- **Start simple** — Monitoring server is a great pilot candidate
+- **SQL is often the hardest** — Plan extra time and testing
+- **Parallel is faster, serial is safer** — Find the right balance
+- **Communication plan matters** — Who knows when each wave happens?
+- **Don't forget DNS** — Traffic routing is often the final cutover step
 
 ---
 
@@ -254,14 +250,14 @@ By the end of this challenge, your whiteboard should show:
 
 ---
 
-### Reflection Questions
-
----
-
 ## ⚠️ Watch out
 
 - A strong plan without rollback detail increases execution risk.
 - Keep cutover communication and DNS steps explicit in your runbook.
+
+---
+
+## Reflection Questions
 
 - How did your assessment results influence tool selection?
 - What dependencies created constraints in your sequencing?
@@ -271,6 +267,10 @@ By the end of this challenge, your whiteboard should show:
 
 ## Next Step
 
-⏸️ **WAIT!** Take a break (14:45-15:00).
+⏸️ **WAIT!** Take a break (14:30-14:45).
 
-At 14:45, your facilitator will announce **Challenge 5: Curveball** — a surprise requirement that will test your adaptability!
+At 14:45, your facilitator will announce [Challenge 5: Curveball](05-curveball.md) — a surprise requirement that will test your adaptability!
+
+---
+
+← [Challenge 3: Assessment](03-assessment.md) | [Challenges Overview](README.md) | [Challenge 5: Curveball](05-curveball.md) →

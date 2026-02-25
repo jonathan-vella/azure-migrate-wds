@@ -46,8 +46,8 @@ This is NOT a slide presentation. Use your whiteboard photos and diagrams to wal
 | Cost and governance | 2 min |
 | GDPR compliance approach | 1 min |
 | **Total Presentation** | **8 min** |
-| Objection handling | 4 min |
-| **Total Time** | **12 min** |
+| Objection handling | 3 min |
+| **Total Time** | **11 min** |
 
 ---
 
@@ -149,36 +149,36 @@ By the end of this challenge, your team should provide:
 
 ### Presentation Order
 
-There are **4 teams**, and each team has exactly **12 minutes** (8 min presentation + 4 min objections). Strict timekeeping ensures all teams present.
+There are **4 teams**, and each team has exactly **11 minutes** (8 min presentation + 3 min objections). Strict timekeeping ensures all teams present.
 
 | Team | Time Slot | Duration |
 |------|-----------|----------|
-| 🔴 Team 1 | 16:00 - 16:12 | 12 min |
-| 🟠 Team 2 | 16:12 - 16:24 | 12 min |
-| 🟢 Team 3 | 16:24 - 16:36 | 12 min |
-| 🔵 Team 4 | 16:36 - 16:48 | 12 min |
+| 🔴 Team 1 | 16:00 - 16:11 | 11 min |
+| 🟠 Team 2 | 16:11 - 16:22 | 11 min |
+| 🟢 Team 3 | 16:22 - 16:33 | 11 min |
+| 🔵 Team 4 | 16:33 - 16:44 | 11 min |
 
 ```mermaid
 gantt
-    title Presentation Schedule (16:00 - 16:48)
+    title Presentation Schedule (16:00 - 16:44)
     dateFormat HH:mm
     axisFormat %H:%M
-    
+
     section Team 1
     Presentation    :t1p, 16:00, 8m
-    Objections      :t1o, after t1p, 4m
-    
+    Objections      :t1o, after t1p, 3m
+
     section Team 2
-    Presentation    :t2p, 16:12, 8m
-    Objections      :t2o, after t2p, 4m
-    
+    Presentation    :t2p, 16:11, 8m
+    Objections      :t2o, after t2p, 3m
+
     section Team 3
-    Presentation    :t3p, 16:24, 8m
-    Objections      :t3o, after t3p, 4m
-    
+    Presentation    :t3p, 16:22, 8m
+    Objections      :t3o, after t3p, 3m
+
     section Team 4
-    Presentation    :t4p, 16:36, 8m
-    Objections      :t4o, after t4p, 4m
+    Presentation    :t4p, 16:33, 8m
+    Objections      :t4o, after t4p, 3m
 ```
 
 > ⚠️ **Watch out**: Time is strictly enforced. Practice to stay within 8 minutes!
@@ -296,7 +296,7 @@ Congratulations on completing the Azure Migration Workshop!
 3. **Stay connected**:
    - [Azure Migrate documentation](https://learn.microsoft.com/azure/migrate/)
    - [Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/)
-    - [Azure Arc Jumpstart](https://jumpstart.azure.com/)
+   - [Azure Arc Jumpstart](https://jumpstart.azure.com/)
 
 ### Take With You
 
@@ -307,3 +307,7 @@ Congratulations on completing the Azure Migration Workshop!
 ---
 
 Thank you for participating! 🙏
+
+---
+
+← [Challenge 6: Optimize](06-optimize.md) | [Challenges Overview](README.md)

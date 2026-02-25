@@ -359,3 +359,7 @@ Your answer: "We recommend X because [specific reason for Contoso's situation]"
 3. Raise your hand for facilitator help
 
 Remember: **It's OK to ask for help!** That's what the facilitators are here for.
+
+---
+
+[Back to Challenges](../../challenges/README.md) | [Participant Materials](README.md)

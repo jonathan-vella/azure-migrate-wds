@@ -15,6 +15,8 @@ This folder contains materials for workshop facilitators and coaches.
 | [curveball-script.md](curveball-script.md) | GDPR announcement script |
 | [scoring-rubric.md](scoring-rubric.md) | 100-point scoring criteria |
 | [solution-reference.md](solution-reference.md) | Expected outputs and talking points |
+| [target-architecture.md](target-architecture.md) | Recommended post-migration architecture |
+| [email-invite-template.md](email-invite-template.md) | Participant invitation template |
 
 ---
 

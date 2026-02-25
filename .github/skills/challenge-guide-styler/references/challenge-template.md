@@ -90,6 +90,13 @@ By the end of this challenge, teams should submit:
 
 ---
 
+## Reflection Questions
+
+- Prompt teams to consider what went well and what they would change.
+- Connect the challenge outcome to real-world migration decisions.
+
+---
+
 ## Next Step
 
 Proceed to [Challenge Y: Name](YY-name.md).

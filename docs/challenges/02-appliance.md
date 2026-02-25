@@ -41,7 +41,7 @@ Before starting this challenge, ensure:
 
 ## Your Tasks
 
-### Part A: Create Azure Migrate Project (15 min)
+### Part A: Create Azure Migrate Project (10 min)
 
 1. Navigate to **Azure Migrate** in the Azure portal
 2. Select **Servers, databases and web apps**
@@ -75,7 +75,7 @@ Before starting this challenge, ensure:
 
 ---
 
-### Part B: Download and Import Appliance VHD (25 min)
+### Part B: Download and Import Appliance VHD (20 min)
 
 1. In the Azure Migrate portal, locate **Step 2: Download Azure Migrate appliance**
 
@@ -84,7 +84,7 @@ Before starting this challenge, ensure:
    > 💡 **Tip**: While downloading, proceed to connect to your ArcBox environment
 
 3. **Connect to ArcBox-Client VM**:
-   
+
    - Use the RDP connection details from your facilitator
    - Or use Azure Bastion if configured
 
@@ -93,15 +93,15 @@ Before starting this challenge, ensure:
 5. Import the Azure Migrate appliance:
 
    a. **Actions** → **Import Virtual Machine**
-   
+
    b. **Locate Folder**: Browse to the extracted VHD folder
-   
+
    c. **Select Virtual Machine**: Choose the appliance
-   
+
    d. **Choose Import Type**: Select **"Copy the virtual machine (create a new unique ID)"**
-   
+
    e. **Configure Networking**: Select the external virtual switch
-   
+
    f. Click **Finish**
 
 6. **Start the appliance VM**:
@@ -120,35 +120,35 @@ Before starting this challenge, ensure:
 
 ---
 
-### Part C: Configure and Register Appliance (20 min)
+### Part C: Configure and Register Appliance (15 min)
 
 1. **Access the Appliance Configuration Manager**:
-   
+
    - From any machine that can reach the appliance
    - Open browser to: `https://<appliance-IP>:44368`
    - Accept the certificate warning
 
 2. **Set up prerequisites**:
-   
+
    The appliance will check:
    - ✅ Internet connectivity
    - ✅ Time sync
    - ✅ Latest updates
 
 3. **Register with Azure Migrate**:
-   
+
    a. Paste the **project key** you saved earlier
-   
+
    b. Click **Login**
-   
+
    c. Click **Copy code & Login**
-   
+
    d. In the new browser tab, paste the device code
-   
+
    e. Sign in with your Azure credentials
-   
+
    f. Return to the configuration manager
-   
+
    g. Verify: **"Successfully registered"**
 
 ✅ **Verify**:
@@ -163,7 +163,7 @@ Before starting this challenge, ensure:
 1. **Add Hyper-V Host Credentials**:
 
    In **Step 1: Provide Hyper-V host credentials**:
-   
+
    | Setting | Value |
    |---------|-------|
    | Friendly name | `ArcBoxAdmin` |
@@ -173,7 +173,7 @@ Before starting this challenge, ensure:
 2. **Add Hyper-V Host**:
 
    In **Step 2: Provide Hyper-V host/cluster details**:
-   
+
    - Click **Add discovery source**
    - Enter the Hyper-V host IP/FQDN (ArcBox-Client)
    - Select the `ArcBoxAdmin` credentials
@@ -249,7 +249,7 @@ By the end of this challenge, your team should provide:
 
 ---
 
-### ⚠️ Watch out
+## ⚠️ Watch out
 
 | Issue | Solution |
 |-------|----------|
@@ -260,24 +260,17 @@ By the end of this challenge, your team should provide:
 | Registration fails | Ensure you have Application Developer role in Azure AD |
 | Discovery stuck | Check credentials have local admin on Hyper-V host |
 
+- Validate appliance networking and WinRM early to avoid late discovery failures.
+- Keep project key and credentials secure and accessible to the team.
+
 ---
 
 ## 💡 Tip
 
-💡 **Work in parallel** — One person downloads VHD while another creates the Migrate project
-
-💡 **Document everything** — Save passwords and IPs, you'll need them later
-
-💡 **Don't wait for full discovery** — Initial server discovery is fast, deeper analysis takes longer
-
-💡 **Check the appliance logs** — If issues occur, logs are at `C:\ProgramData\Microsoft Azure\Logs`
-
----
-
-## ⚠️ Watch out
-
-- Validate appliance networking and WinRM early to avoid late discovery failures.
-- Keep project key and credentials secure and accessible to the team.
+- **Work in parallel** — One person downloads VHD while another creates the Migrate project
+- **Document everything** — Save passwords and IPs, you'll need them later
+- **Don't wait for full discovery** — Initial server discovery is fast, deeper analysis takes longer
+- **Check the appliance logs** — If issues occur, logs are at `C:\ProgramData\Microsoft Azure\Logs`
 
 ---
 
@@ -299,3 +292,7 @@ This is exactly how real migrations begin — with discovery!
 ⏸️ **Break for Lunch** — Discovery will continue running.
 
 After lunch, verify your discovered servers and proceed to [Challenge 3: Assessment](03-assessment.md).
+
+---
+
+← [Challenge 1: Plan](01-plan.md) | [Challenges Overview](README.md) | [Challenge 3: Assessment](03-assessment.md) →

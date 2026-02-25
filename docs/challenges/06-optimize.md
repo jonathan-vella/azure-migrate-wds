@@ -238,15 +238,11 @@ Add to your whiteboard:
 
 ## 💡 Tip
 
-💡 **Hybrid Benefit is often forgotten** — Big savings if licenses exist
-
-💡 **Start with Pay-as-you-go** — Commit to RIs after usage patterns stabilize
-
-💡 **Right-sizing is iterative** — Use Azure Advisor ongoing
-
-💡 **Azure Arc isn't just for non-migrated servers** — Consider for future acquisitions
-
-💡 **Governance prevents cost surprises** — Policies save money!
+- **Hybrid Benefit is often forgotten** — Big savings if licenses exist
+- **Start with Pay-as-you-go** — Commit to RIs after usage patterns stabilize
+- **Right-sizing is iterative** — Use Azure Advisor ongoing
+- **Azure Arc isn't just for non-migrated servers** — Consider for future acquisitions
+- **Governance prevents cost surprises** — Policies save money!
 
 ---
 
@@ -284,14 +280,14 @@ Impress the judges with advanced cost optimization:
 
 ---
 
-### Reflection Questions
-
----
-
 ## ⚠️ Watch out
 
 - Underestimating governance can erase savings through sprawl and misconfiguration.
 - Commit discounts should follow observed usage patterns, not assumptions.
+
+---
+
+## Reflection Questions
 
 - What surprised you about the cost estimates?
 - How does governance impact cost management?
@@ -302,3 +298,7 @@ Impress the judges with advanced cost optimization:
 ## Next Step
 
 Prepare for [Challenge 7: Presentation](07-presentation.md) — Time to present your complete migration strategy!
+
+---
+
+← [Challenge 5: Curveball](05-curveball.md) | [Challenges Overview](README.md) | [Challenge 7: Presentation](07-presentation.md) →

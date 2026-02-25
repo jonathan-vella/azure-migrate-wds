@@ -11,7 +11,7 @@ gantt
     axisFormat %H:%M
 
     section Pre-work
-    ⚡ Azure 101 (Pre-work)              :c0, 09:30, 30m
+    ⚡ Azure 101 (Pre-work)              :done, c0, 09:00, 30m
 
     section Morning
     📋 Challenge 1 - Plan               :crit, c1, 10:30, 45m
@@ -21,7 +21,7 @@ gantt
     section Afternoon
     📊 Challenge 3 - Assessment         :active, c3, 13:15, 45m
     🚀 Challenge 4 - Execute            :crit, c4, 14:00, 30m
-    🎲 Challenge 5 - Curveball          :milestone, c5, 14:45, 0m
+    🎲 Challenge 5 - Curveball          :c5, 14:45, 30m
     💰 Challenge 6 - Optimize           :c6, 15:15, 45m
     🎤 Challenge 7 - Presentation       :done, c7, 16:00, 45m
 ```
@@ -60,7 +60,7 @@ gantt
 
 ## Challenge Types
 
-### � Pre-work
+### 🔵 Pre-work
 
 Self-paced preparation to complete before the workshop day.
 

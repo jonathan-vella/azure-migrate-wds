@@ -49,7 +49,7 @@ Before starting this challenge, ensure:
 
 Work with your team to design the **assessment and wave planning strategy** on your whiteboard.
 
-### Part A: Assessment Strategy (20 min)
+### Part A: Assessment Strategy (15 min)
 
 **Guiding Questions:**
 
@@ -72,7 +72,7 @@ Work with your team to design the **assessment and wave planning strategy** on y
 
 ---
 
-### Part B: Migration Wave Planning (25 min)
+### Part B: Migration Wave Planning (20 min)
 
 Use the **Value vs. Complexity Matrix** to prioritize workloads:
 
@@ -112,7 +112,7 @@ Use the **Value vs. Complexity Matrix** to prioritize workloads:
 
 ---
 
-### Part C: Success Criteria Definition (15 min)
+### Part C: Success Criteria Definition (10 min)
 
 **Guiding Questions:**
 
@@ -214,13 +214,10 @@ Use this template to capture your team's decisions:
 
 ## 💡 Tip
 
-💡 **Start with business impact** — Which workloads matter most to Contoso?
-
-💡 **Think about dependencies** — The SQL database likely has apps that depend on it
-
-💡 **Non-production first** — Consider migrating monitoring/dev environments before production
-
-💡 **Include one complex workload early** — Learn lessons before migrating everything
+- **Start with business impact** — Which workloads matter most to Contoso?
+- **Think about dependencies** — The SQL database likely has apps that depend on it
+- **Non-production first** — Consider migrating monitoring/dev environments before production
+- **Include one complex workload early** — Learn lessons before migrating everything
 
 ---
 
@@ -236,14 +233,14 @@ Use this template to capture your team's decisions:
 
 ---
 
-### Reflection Questions
-
----
-
 ## ⚠️ Watch out
 
 - Avoid over-optimizing wave design without validating dependencies.
 - Keep migration rationale evidence-based, not assumption-only.
+
+---
+
+## Reflection Questions
 
 After completing this challenge, consider:
 
@@ -256,3 +253,7 @@ After completing this challenge, consider:
 ## Next Step
 
 After your wave plan is complete and photographed, proceed to [Challenge 2: Deploy Appliance](02-appliance.md) to start discovering the actual environment.
+
+---
+
+← [Pre-work: Azure 101](00-azure-101.md) | [Challenges Overview](README.md) | [Challenge 2: Deploy Appliance](02-appliance.md) →

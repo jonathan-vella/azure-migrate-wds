@@ -45,9 +45,9 @@ Do not read beyond this point until your facilitator announces the curveball at 
 
 ### 📢 BREAKING NEWS FROM CONTOSO
 
-> **From**: IT Manager, Contoso Bakery  
-> **To**: Migration Team  
-> **Subject**: URGENT — Data Compliance Requirement  
+> **From**: IT Manager, Contoso Bakery
+> **To**: Migration Team
+> **Subject**: URGENT — Data Compliance Requirement
 > **Priority**: High
 >
 > Team,
@@ -64,8 +64,8 @@ Do not read beyond this point until your facilitator announces the curveball at 
 >
 > Please update your migration plans accordingly. I need confirmation that our architecture addresses this requirement before we can proceed.
 >
-> Regards,  
-> Chief Information Security Officer  
+> Regards,
+> IT Manager
 > Contoso Bakery
 
 ---
@@ -194,15 +194,11 @@ Add to your existing whiteboard:
 
 ## 💡 Tip
 
-💡 **SQL database is the obvious one** — But don't forget logs and backups!
-
-💡 **Check your monitoring server** — Does it collect PII in logs?
-
-💡 **Azure Policy can help** — Deny deployments outside allowed regions
-
-💡 **Consider Azure Arc** — For workloads that must stay on-premises
-
-💡 **Document your decisions** — Auditors will ask "why" later
+- **SQL database is the obvious one** — But don't forget logs and backups!
+- **Check your monitoring server** — Does it collect PII in logs?
+- **Azure Policy can help** — Deny deployments outside allowed regions
+- **Consider Azure Arc** — For workloads that must stay on-premises
+- **Document your decisions** — Auditors will ask "why" later
 
 ---
 
@@ -225,22 +221,14 @@ Add to your existing whiteboard:
 
 ---
 
-### Reflection Questions
-
-- How did this surprise change your perception of migration complexity?
-- What would you have done differently in Challenge 1 if you knew this was coming?
-- How common are mid-project compliance surprises in real migrations?
-
----
-
-### What Just Happened?
-
----
-
 ## ⚠️ Watch out
 
 - Do not assume EU compliance is only about primary data stores; include logs, backups, and replicas.
 - Revalidate DR and cross-region settings after architecture updates.
+
+---
+
+### What Just Happened?
 
 Welcome to the real world! Migration projects frequently encounter:
 - New compliance requirements discovered mid-project.
@@ -252,8 +240,20 @@ The ability to adapt your plan is just as important as creating it!
 
 ---
 
+## Reflection Questions
+
+- How did this surprise change your perception of migration complexity?
+- What would you have done differently in Challenge 1 if you knew this was coming?
+- How common are mid-project compliance surprises in real migrations?
+
+---
+
 ## Next Step
 
 Proceed immediately to [Challenge 6: Optimize](06-optimize.md) to finalize your design with cost optimization and governance.
+
+---
+
+← [Challenge 4: Execute](04-execute.md) | [Challenges Overview](README.md) | [Challenge 6: Optimize](06-optimize.md) →
 
 </details>
